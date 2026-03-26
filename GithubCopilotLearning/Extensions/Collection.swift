@@ -1,0 +1,26 @@
+//
+//  Collection.swift
+//  GithubCopilotLearning
+//
+//  Created by Rishita Panchal on 26/03/2026.
+//  Copyright © 2026 Simform Solutions. All rights reserved.
+//
+import Foundation
+extension Collection {
+    /// Returns the element at the specified index if it is within bounds, otherwise nil.
+    subscript(safe index: Index) -> Element? {
+        return indices.contains(index) ? self[index] : nil
+    }
+}
+extension MutableCollection {
+    subscript(safe index: Index) -> Element? {
+        get {
+            return indices.contains(index) ? self[index] : nil
+        }
+        set(newValue) {
+            if let newValue = newValue, indices.contains(index) {
+                self[index] = newValue
+            }
+        }
+    }
+}

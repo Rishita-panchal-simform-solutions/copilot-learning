@@ -1,0 +1,48 @@
+custom_rules:
+    sf_safe_symbol:
+        name: "Safe SFSymbol"
+        message: "Use `SFSafeSymbols` via `systemSymbol` parameters for type safety."
+        regex: "(Image\\(systemName:)|(NSImage\\(symbolName:)|(Label[^,]+?,\\s*systemImage:)|(UIApplicationShortcutIcon\\(systemImageName:)"
+        severity: warning
+disabled_rules:
+  - trailing_whitespace
+  - trailing_newline
+  - unused_closure_parameter
+  - empty_enum_arguments
+excluded: # paths to ignore during linting. Takes precedence over `included`.
+  - Carthage
+  - Pods
+  - SwiftCanvas/Resources/
+  - ArkanaKeys
+  - GithubCopilotLearning/
+  - UIKitBaseSetup/
+identifier_name:
+  min_length: 2
+  max_length: # warning and error
+    warning: 40
+    error: 50
+  excluded: # excluded via string array
+    - id
+    - URL
+    - α
+    - β
+type_name:
+  min_length: 2
+  excluded:
+    - ID
+type_body_length:
+  - 300 # warning
+  - 400 # error
+file_length:
+  warning: 750
+  error: 1000
+function_body_length:
+  - 50 # warning
+  - 80 # error
+line_length:
+  warning: 150
+  error: 180
+  ignores_comments: true
+opt_in_rules:
+  - force_unwrapping
+reporter: "xcode"

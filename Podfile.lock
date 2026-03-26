@@ -1,0 +1,86 @@
+PODS:
+  - Bagel (1.4.0):
+    - CocoaAsyncSocket
+  - CocoaAsyncSocket (7.6.5)
+  - Connectivity (8.0.1)
+  - GithubCopilotLearningSecrets (1.0.0):
+    - GithubCopilotLearningSecretsInterfaces (~> 1.0.0)
+  - GithubCopilotLearningSecretsInterfaces (1.0.0)
+  - Kingfisher (8.6.2)
+  - Navajo-Swift (2.1.0)
+  - PhoneNumberKit (4.2.3):
+    - PhoneNumberKit/PhoneNumberKitCore (= 4.2.3)
+    - PhoneNumberKit/UIKit (= 4.2.3)
+  - PhoneNumberKit/PhoneNumberKitCore (4.2.3)
+  - PhoneNumberKit/UIKit (4.2.3):
+    - PhoneNumberKit/PhoneNumberKitCore
+  - R.swift (7.8.0)
+  - Sentry (9.2.0):
+    - Sentry/Core (= 9.2.0)
+  - Sentry/Core (9.2.0)
+  - SFSafeSymbols (7.0.0)
+  - SSAppUpdater (1.8.0)
+  - SwiftDate (7.0.0)
+  - SwiftLint (0.63.2)
+  - SwiftMessages (10.0.2):
+    - SwiftMessages/App (= 10.0.2)
+  - SwiftMessages/App (10.0.2)
+
+DEPENDENCIES:
+  - Bagel
+  - Connectivity
+  - GithubCopilotLearningSecrets (from `./ArkanaKeys/GithubCopilotLearningSecrets`)
+  - GithubCopilotLearningSecretsInterfaces (from `./ArkanaKeys/GithubCopilotLearningSecretsInterfaces`)
+  - Kingfisher
+  - Navajo-Swift
+  - PhoneNumberKit
+  - R.swift
+  - Sentry
+  - SFSafeSymbols
+  - SSAppUpdater
+  - SwiftDate
+  - SwiftLint
+  - SwiftMessages
+
+SPEC REPOS:
+  trunk:
+    - Bagel
+    - CocoaAsyncSocket
+    - Connectivity
+    - Kingfisher
+    - Navajo-Swift
+    - PhoneNumberKit
+    - R.swift
+    - Sentry
+    - SFSafeSymbols
+    - SSAppUpdater
+    - SwiftDate
+    - SwiftLint
+    - SwiftMessages
+
+EXTERNAL SOURCES:
+  GithubCopilotLearningSecrets:
+    :path: "./ArkanaKeys/GithubCopilotLearningSecrets"
+  GithubCopilotLearningSecretsInterfaces:
+    :path: "./ArkanaKeys/GithubCopilotLearningSecretsInterfaces"
+
+SPEC CHECKSUMS:
+  Bagel: c3fa6bcbd52db9ca976edbafd7638f0553ded101
+  CocoaAsyncSocket: 065fd1e645c7abab64f7a6a2007a48038fdc6a99
+  Connectivity: f9e562568f32d7a297412d939edac9f3959db96f
+  GithubCopilotLearningSecrets: 040076ca882483038bd6bf8488e17b54d0b213c7
+  GithubCopilotLearningSecretsInterfaces: 91464e87cb519f920754b343e4af00e938070a13
+  Kingfisher: 23d18f54677d973b713e54ce6a8f5eef6e7056ba
+  Navajo-Swift: 57b93e73efbfbf452433efbff04402de56beff51
+  PhoneNumberKit: d6b20eab1cdd77216e24f9b15878a78b69fb5a4d
+  R.swift: f573269ca45b2ab066c082e363dd4c2b297b0d71
+  Sentry: f700cbf2d65e66660725afde62403fd9e11500c8
+  SFSafeSymbols: 681881c7ea2696bac6dfe4c5169efaf362f85fe6
+  SSAppUpdater: 8a19a8acd78229c2da998b064d9daded73c36141
+  SwiftDate: bbc26e26fc8c0c33fbee8c140c5e8a68293a148a
+  SwiftLint: 4fa4a9b437ccc4fc72f6c0bc98556e8e9e05bccf
+  SwiftMessages: bfefe945bc05ce7cd328303d53d0d1849e29109d
+
+PODFILE CHECKSUM: 9f4ffb6e6ac49bd60a766a404afbd8d6c90e276f
+
+COCOAPODS: 1.16.2

@@ -1,0 +1,88 @@
+name: GithubCopilotLearning
+attributes:
+  LastUpgradeCheck: 1500
+  LastUpgradeVersion: 1500
+options:
+  localPackagesGroup: Dependencies
+  xcodeVersion: 1500
+  bundleIdPrefix:
+  deploymentTarget: 18.0
+configs:
+  Staging debug: debug
+  Staging release: release
+  Development debug: debug
+  Development release: release
+settings:
+  base:
+    INFOPLIST_KEY_CFBundleDisplayName: GithubCopilotLearning
+    IPHONEOS_DEPLOYMENT_TARGET: 18.0
+    MARKETING_VERSION: 1.0
+    CURRENT_PROJECT_VERSION: 1
+    PRODUCT_BUNDLE_IDENTIFIER: com.simform.GithubCopilotLearning
+  configs:
+    Staging:
+      OTHER_SWIFT_FLAGS: $(inherited) -D Staging -D ACCELERATE_NEW_LAPACK -D ACCELERATE_LAPACK_ILP64
+    Development:
+      OTHER_SWIFT_FLAGS: $(inherited) -D Development -D ACCELERATE_NEW_LAPACK -D ACCELERATE_LAPACK_ILP64
+packages:
+  Alamofire:
+    url: https://github.com/Alamofire/Alamofire.git
+    version: 5.9.1
+  NetworkEngine:
+    url: https://github.com/mobile-simformsolutions/NetworkEngineXC.git
+    version: 2.0.1
+  Logging:
+    url: https://github.com/apple/swift-log.git
+    from: 1.0.0
+targets:
+  GithubCopilotLearning:
+    scheme:
+      testTargets:
+        - GithubCopilotLearningTests
+        - GithubCopilotLearningUITests
+      configVariants:
+        - Staging
+        - Development
+    type: application
+    platform: iOS
+    deploymentTarget: 18.0
+    sources: "/Users/rishita/Documents/GithubCopilotLearning/GithubCopilotLearning/GithubCopilotLearning"
+    dependencies:
+      - package: NetworkEngine
+      - package: Logging
+      - package: Alamofire
+    preBuildScripts:
+      - script: |
+          "$PODS_ROOT/R.swift/rswift" generate "$SRCROOT/GithubCopilotLearning/Resources/R.generated.swift"
+        outputFiles:
+          - $SRCROOT/GithubCopilotLearning/Resources/R.generated.swift
+        name: R.swift
+        basedOnDependencyAnalysis: false
+      - script: |
+          "${PODS_ROOT}/SwiftLint/swiftlint"
+        name: Swiftlint
+        basedOnDependencyAnalysis: false
+    settings:
+      PRODUCT_BUNDLE_IDENTIFIER: com.simform.GithubCopilotLearning
+  GithubCopilotLearningTests:
+    deploymentTarget: 18.0
+    platform: iOS
+    type: bundle.unit-test
+    sources: /Users/rishita/Documents/GithubCopilotLearning/GithubCopilotLearning/GithubCopilotLearningTests
+    info:
+        path: /Users/rishita/Documents/GithubCopilotLearning/GithubCopilotLearning/Tests.plist
+    dependencies:
+      - target: GithubCopilotLearning
+    settings:
+      PRODUCT_BUNDLE_IDENTIFIER: com.simform.GithubCopilotLearning.test
+  GithubCopilotLearningUITests:
+    deploymentTarget: 18.0
+    platform: iOS
+    type: bundle.ui-testing
+    sources: /Users/rishita/Documents/GithubCopilotLearning/GithubCopilotLearning/GithubCopilotLearningUITests
+    info:
+        path: /Users/rishita/Documents/GithubCopilotLearning/GithubCopilotLearning/UITests.plist
+    dependencies:
+      - target: GithubCopilotLearning
+    settings:
+      PRODUCT_BUNDLE_IDENTIFIER: com.simform.GithubCopilotLearning.uitests

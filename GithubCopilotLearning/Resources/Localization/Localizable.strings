@@ -1,0 +1,37 @@
+//
+//  Localizable.strings
+//  GithubCopilotLearning
+//
+//  Created by GithubCopilotLearning on {% now 'local', '%d/%m/%y' %}.
+//  Copyright © {% now 'local', '%Y' %} Simform solutions. All rights reserved.
+//
+// MARK: Application
+"appName" = "GithubCopilotLearning";
+// API errors
+"internetConnectionError" = "Internet connection error.";
+"error" = "Oops!";
+"connectToInternet" = "Please connect to Internet!";
+"somethingWentWrong" = "Something went wrong. Please try again.";
+"internalServerError" = "Internal Server error.";
+"unauthorisedUser" = "Unauthorised User.";
+"resultNotFound" = "Result not Found";
+"requestTimeout" = "Request timeout.";
+"invalidResponse" = "Invalid response";
+"requestFailed" = "Request failed";
+"serverNotFound" = "Server not Found";
+"badRequest" = "Bad request";
+"invalidURL" = "Invalid url";
+"emptyResponse" = "Empty Response";
+"maxAttemptsExceeded" = "Maximum retry attempts exceed";
+// MARK: Document directory errors
+"unableToCreate" = "Unable to create file";
+// MARK: For S3
+"imageNotFound"             = "Image not found";
+"urlNotFound"               = "Url not found";
+// TODO: temporary for demo. Pls remove.
+"ourBestServices" = "Our best services";
+"loremIpsumDesc" = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.";
+"testSnackBar" = "This is test snackbar";
+"letsGo" = "Let's go!";
+"dontHaveAccount" = "Don't have an account?";
+"signup" = "Signup";

@@ -1,0 +1,1661 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0302F8DFA83CB030116FEC5C /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21B5CE184E79C2A4E305782 /* R.generated.swift */; };
+		0880E9F2F6FE9BEA649B7119 /* View+Rotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80208D0D17BCA60A58C7166C /* View+Rotation.swift */; };
+		0A744A3992FF5F3AF023EE66 /* RefreshTokenRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D725ABDFFE9DA48DB6CB0D /* RefreshTokenRequest.swift */; };
+		0C097FFA8633ED88F64FAFD1 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813772F9AD39962156B0B3D3 /* Color.swift */; };
+		0C54D0EF55544AAD32FC0000 /* UIDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB8569F8A06C5B5B68F1227 /* UIDevice.swift */; };
+		0D57D882C77D465CB88C876E /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD6A4AB54108DD7AD362570 /* Queue.swift */; };
+		0EA89C0A4B4A8422CC510A4B /* OnboardingRouterPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CAE6A6EBEF57FEB13D69935 /* OnboardingRouterPath.swift */; };
+		0F1F9A90FB1F9D44095119BA /* CustomError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D41D2BA263BE2151360B9C4 /* CustomError.swift */; };
+		12DABDA4F3A80EF04D3D3722 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54E16C44A55565FAB04E620C /* Preview Assets.xcassets */; };
+		153AF2B9644CFAFA2936E580 /* Formatters+Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5724440A7709AEAF9DBD8C8 /* Formatters+Date.swift */; };
+		15A2DD176ABE3BBD7791C27F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED39915A2FF54893342BA83 /* Constants.swift */; };
+		18AD1537F4F3277133F20648 /* KCSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F5E97B5E505FF7EDBDC7AA /* KCSettings.swift */; };
+		19B83E5D4CC2506549BBB4E2 /* ReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FACEADE2FD364C2B2032F1 /* ReachabilityManager.swift */; };
+		1A875268F825A213C350536D /* ShimmerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1352694E71FBAB6849B2CEEA /* ShimmerView.swift */; };
+		1B7035B615570A77F1CCCE3F /* AdaptiveLayoutHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F466805423779210CB9EE57C /* AdaptiveLayoutHelper.swift */; };
+		20E77A023950BA381C8CABC6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E82E1F07AA023A69BD3BE8 /* SceneDelegate.swift */; };
+		23BE600DA4F7200473A58548 /* APITarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D962E8718C309A13F7EB3C /* APITarget.swift */; };
+		272782780DCE12087A25E790 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF683A72820E1ABFF14C4AC /* UIImage.swift */; };
+		2E19ADB5C3F9D53F0DBFCF63 /* ServerErrorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B122B7C2F03C558C63233C4 /* ServerErrorModel.swift */; };
+		2E88E567920A61BB782B7535 /* SecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A4E91E24E1A28661578958 /* SecondView.swift */; };
+		2F0081DBE996970555FCBFAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C77DF6F22AA3A0FF1B8F0A6F /* Assets.xcassets */; };
+		3490AB3ECDF4E6BDB7D428BC /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E7ED0D736658F00AE729083 /* DashboardView.swift */; };
+		3513749EDB8227C4ADF9AAD4 /* URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB91F273E73D9ABBEF81A4F4 /* URL.swift */; };
+		358588FF583862ED33417303 /* AppSecrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE57B9961AE291ACD91404B /* AppSecrets.swift */; };
+		359A7BA90EB1ACBEB37373DB /* AdaptivePadding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898BE3E4D16E2D594CF7ABE2 /* AdaptivePadding.swift */; };
+		364629119FEDF6925F4DB592 /* GithubCopilotLearningTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA06AD1319DA57A9AEDADF8D /* GithubCopilotLearningTests.swift */; };
+		369A1CBE1530ADC46E49C60A /* OnboardingAppRegistry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C1C0C69EDF9714A7B520E4 /* OnboardingAppRegistry.swift */; };
+		38AA3ED7B1A0AD43DAF71F51 /* URLFileAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3718810A2A48D6DA5420C4E /* URLFileAttribute.swift */; };
+		3932E551DD65FB658046CB99 /* BaseResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72053898AB5BC95E1ED146A3 /* BaseResponseModel.swift */; };
+		3EBFBAA02C5BD7252982C33C /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8068E3AC798B445F2EEB5180 /* Color.xcassets */; };
+		43C8A8E400DC75E381C31322 /* UserDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D9BC2B248FA49B48405353 /* UserDefault.swift */; };
+		44AF2280FFC3FB3C9A753B57 /* Logging in Frameworks */ = {isa = PBXBuildFile; productRef = 27F4058A94D83CC07B88A82D /* Logging */; };
+		45AFFA8F241358518F123A68 /* GithubCopilotLearningUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68F980E9A4E1F018E8D512B /* GithubCopilotLearningUITestsLaunchTests.swift */; };
+		49840CC968A1C3BD4B5F9248 /* ColorResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61338111E83042BFF8E57333 /* ColorResource.swift */; };
+		4C2B54B23C0C4ECEF1CE7AE0 /* Font+Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = E877061B629921B0E0112EEC /* Font+Custom.swift */; };
+		4C83EE8E8FBEE709BFF3B152 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B243EE6D5C198C7F263E8D /* UIView.swift */; };
+		4C8F0D38C7F2CE3A518B6E21 /* AppResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E084F6A4045E75F4DC82AE /* AppResources.swift */; };
+		4FDD4688497C8160AF88F471 /* Pods_GithubCopilotLearning.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEF5518AEAE3EA8F3A8E3065 /* Pods_GithubCopilotLearning.framework */; };
+		54100B9687DF3A291F1EB62B /* GithubCopilotLearningApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932BDD366FD2F09698F17CA8 /* GithubCopilotLearningApp.swift */; };
+		57C986B152AC7559DF6C5E81 /* Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601F71FA0BDC6E0E31BA310F /* Collection.swift */; };
+		59A0C86909936222352F630C /* Bundle+Version.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738165178ED9DA44500A1DDA /* Bundle+Version.swift */; };
+		5C001A0623E1196308AC46E5 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76DB0BC5AE9D5010600FF702 /* Logger.swift */; };
+		5CEDF8C4AF80EC00B414F512 /* ItemDetailAppRegistry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3C0FD6CB4D87F85703B4C2 /* ItemDetailAppRegistry.swift */; };
+		5F56B1DA281F95ECA2267ECF /* SnackBarIconTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE10126F3BC3772459E3F491 /* SnackBarIconTextView.swift */; };
+		6A8492D3CED5CB394FF30D91 /* NetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6C75B2E88F2417767E3B6F /* NetworkHelper.swift */; };
+		6A9258085E05881C0EB93CE7 /* FourthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B626ED3C2FC2F97FB23E8B6 /* FourthView.swift */; };
+		6AE95B84C0D3573EE702EC0B /* NetworkRequestable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DB44992882CCAC08E77A91 /* NetworkRequestable.swift */; };
+		6E862FC0754A40D07B8589EB /* ShowAlertModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B04E1006138CBD8A2D1D930 /* ShowAlertModifier.swift */; };
+		718BB6C00FC384340B932AF2 /* GithubCopilotLearningUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53029DFB3CD2E6221E6FD8B /* GithubCopilotLearningUITests.swift */; };
+		72AE596C3F2AB8D9D9BD684B /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA079C65498269F952B07DED /* Date.swift */; };
+		7442FFB36C82DEB688FE6B70 /* AttachmentFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2263CACD828B73AF3DFEC3 /* AttachmentFormData.swift */; };
+		753630DBE2C5253602DD9F8D /* UserList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BE3C425B0AA4595CD404C4 /* UserList.swift */; };
+		764D51AC7A373B86688D1B8B /* DebugPrint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D6C9139ECD09D938FFD886 /* DebugPrint.swift */; };
+		773C1EC5B03BA281AECF226F /* ItemDetailRouterPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169135D1B00F2633929BB87A /* ItemDetailRouterPath.swift */; };
+		7DA3373952C31A7A2D3B03EE /* AdaptiveFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D10D04ED9F9BD412147DDE1 /* AdaptiveFrame.swift */; };
+		80F27C2226AF4C83B4BA483B /* KeychainStorageContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C7DE6364FD342AB3D5C9EF /* KeychainStorageContainer.swift */; };
+		84CE3CD7A5408C85A5BCE98C /* UserDefaultsContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2BF0EB126572A886CA58FF /* UserDefaultsContainer.swift */; };
+		861FFCF7E6D57A9862CE7FB7 /* CGFloat.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB29C50E1438650BAC3F4AE9 /* CGFloat.swift */; };
+		8A84ED5AE5233912ACFB7055 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B583530D8B588B0F0117F0A /* LoginView.swift */; };
+		8AA3971992AF6FC387D6DCE9 /* SnackBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8584DF6C6C287428DE13B8 /* SnackBar.swift */; };
+		8DAF58BDE57397BFB516CCBA /* UDSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3599BC44D0AAA413C9F7330B /* UDSettings.swift */; };
+		92C9D3DF9045DE34FBE96970 /* RefreshTokenResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF0BBCAD5D29B5D577C33F1 /* RefreshTokenResponse.swift */; };
+		95BD539F71C05883844AAB68 /* LibraryPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5FCC2A081A651FBCC39556 /* LibraryPicker.swift */; };
+		9D2161FB18B0F63FEE35B112 /* DateTimeFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = F015A084535A34552F0C4C9A /* DateTimeFormat.swift */; };
+		A916BB409E825FC1850F0EE9 /* SwiftUIWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA50F34FA831CDFF0E618398 /* SwiftUIWrapper.swift */; };
+		A9D2DE4E090E528EA96F02BB /* KeyChainWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29456F61DECBDA082E3C7E98 /* KeyChainWrapper.swift */; };
+		AA46B558D62CE2B6C8EDD421 /* TransparentBlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36E936F8A079AFEFB8F34A73 /* TransparentBlurView.swift */; };
+		AE9A5AD7B37A3DCD65CB2995 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D120CA3131936D5F0FF7CE7 /* AppDelegate.swift */; };
+		B1A213A78698F9D39A53FD0C /* NetworkRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC9B2CFFC72B9151FA8436E /* NetworkRepo.swift */; };
+		B29CAF75D45918C7DD9B4552 /* KeychainOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD358C6D1ADC83F39C59330C /* KeychainOperations.swift */; };
+		B8651F42C9A7A8B6437CB9B7 /* UserListRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18AD3158DD4BFC27401B333 /* UserListRequest.swift */; };
+		B8F9E56E1A19794D96BC874D /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB4A8E6AE3DE3E349AF790F /* Device.swift */; };
+		BABBFCC9689316683E5E2F19 /* AdaptiveOffset.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79053DD96F5F8CC958AE4A0 /* AdaptiveOffset.swift */; };
+		BD688DE63B1C621383BD2EEE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EAD27891A43B20F60E371681 /* InfoPlist.strings */; };
+		C05D7DD5C45484246DAA6ADC /* DashboardView+ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594EC44682ABE9B2102F2827 /* DashboardView+ViewModel.swift */; };
+		C69FE7E3CE90E8C2D5039378 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172AC016B4435A48D4DE7DBD /* String.swift */; };
+		C8EC687E14427D4D50E8715E /* ThirdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0CD745CE95C620BD0277B69 /* ThirdView.swift */; };
+		D0588D60432195EFB8DCC052 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 2F20B74B7954B054783F2208 /* Alamofire */; };
+		D51E21C1F6AC42C137A24E20 /* Tests.plist in Resources */ = {isa = PBXBuildFile; fileRef = A971CF7BBCE9FAD3690B2D28 /* Tests.plist */; };
+		D7457D30C1A8E7864B12DCD1 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B51C6E0570D19127DCD996F /* View.swift */; };
+		D8F6D1391E0C6D08DD8320EE /* UserListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62930C62CD037E3D75899E54 /* UserListView.swift */; };
+		DDE25BBAD5F860FA3C87F640 /* Atomic.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D918647950C219113E6A8C /* Atomic.swift */; };
+		DE8CDB039891512B70F2939F /* UITests.plist in Resources */ = {isa = PBXBuildFile; fileRef = 115CAF962EC2E844A66B9CED /* UITests.plist */; };
+		DEE554ABB75223F35D691ED8 /* ViewDidLoadModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767595FC6B58DA47E08106A0 /* ViewDidLoadModifier.swift */; };
+		DF99A5C92E48A5DF2D99AEAF /* NetworkEngine in Frameworks */ = {isa = PBXBuildFile; productRef = D250974042DF823780244EB0 /* NetworkEngine */; };
+		E0E9EC21DE7CBD414BBAACAF /* MoveContentAboveKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BAB4032683E028B5F34022 /* MoveContentAboveKeyboard.swift */; };
+		E57BA4B62DD93D2E9E3AA88A /* ErrorConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D204D9D72AE34219BEEA9D7 /* ErrorConverter.swift */; };
+		E74F0CAB1386463D76D66284 /* Int+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD80B2E4017E864790A2B16 /* Int+Extensions.swift */; };
+		E988633C70F6C3969996B688 /* HapticsGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F0D05E5DBE7252E309DA76 /* HapticsGenerator.swift */; };
+		EAA3FDE75AFE7A392805D856 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 787FAA48E6AC9857291C1E87 /* Localizable.strings */; };
+		EBE7C070F50EF73F078F41AE /* NotificationsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19251CD6F154E01E0516C3F2 /* NotificationsHelper.swift */; };
+		ECF33CD140BF102AA692A66D /* Encodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E86E1C07C59F3DD418C2A1A /* Encodable.swift */; };
+		EE5A882E92F4A4BD309F477D /* Formatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45338893325652C204D6739C /* Formatters.swift */; };
+		EF2EC904DD111DA1992A3941 /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7A062772DCE68B96FB3ACB /* UIApplication.swift */; };
+		EF7400D0B48BB8202547BE5A /* KFImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E3AF0B4EFB2DC18F5339C8 /* KFImageView.swift */; };
+		F3D899AA7350A0A07A4DCAEE /* Dimension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E10E96B1DDC3033E5A44E21 /* Dimension.swift */; };
+		FC1F67D6E07CC54C83BC8BCF /* HashableVoidCompletion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E20A98E48702C14A8515610 /* HashableVoidCompletion.swift */; };
+		FE5EB507C4696CFD5B00E716 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74107238A99266667E1C6A22 /* ImagePicker.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C90D8D3E9E104DE4064237A0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 69BE95AE86B7402A33987725 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B374EB17A19B70105282141D;
+			remoteInfo = GithubCopilotLearning;
+		};
+		D1770C6C2810F417AA7ABD3E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 69BE95AE86B7402A33987725 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B374EB17A19B70105282141D;
+			remoteInfo = GithubCopilotLearning;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0D12CCFA7005FE8FA51BD1F1 /* Pods-GithubCopilotLearning.staging release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GithubCopilotLearning.staging release.xcconfig"; path = "Target Support Files/Pods-GithubCopilotLearning/Pods-GithubCopilotLearning.staging release.xcconfig"; sourceTree = "<group>"; };
+		0F3C0FD6CB4D87F85703B4C2 /* ItemDetailAppRegistry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailAppRegistry.swift; sourceTree = "<group>"; };
+		11071CF47676E364F47875CC /* Pods-GithubCopilotLearning.staging debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GithubCopilotLearning.staging debug.xcconfig"; path = "Target Support Files/Pods-GithubCopilotLearning/Pods-GithubCopilotLearning.staging debug.xcconfig"; sourceTree = "<group>"; };
+		115CAF962EC2E844A66B9CED /* UITests.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = UITests.plist; sourceTree = "<group>"; };
+		1352694E71FBAB6849B2CEEA /* ShimmerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShimmerView.swift; sourceTree = "<group>"; };
+		13BAB4032683E028B5F34022 /* MoveContentAboveKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveContentAboveKeyboard.swift; sourceTree = "<group>"; };
+		169135D1B00F2633929BB87A /* ItemDetailRouterPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailRouterPath.swift; sourceTree = "<group>"; };
+		172AC016B4435A48D4DE7DBD /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		19251CD6F154E01E0516C3F2 /* NotificationsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsHelper.swift; sourceTree = "<group>"; };
+		19C7DE6364FD342AB3D5C9EF /* KeychainStorageContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainStorageContainer.swift; sourceTree = "<group>"; };
+		1D204D9D72AE34219BEEA9D7 /* ErrorConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorConverter.swift; sourceTree = "<group>"; };
+		1DE57B9961AE291ACD91404B /* AppSecrets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSecrets.swift; sourceTree = "<group>"; };
+		28B19781B91089BEB92BAC7F /* GithubCopilotLearning.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = GithubCopilotLearning.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		29456F61DECBDA082E3C7E98 /* KeyChainWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChainWrapper.swift; sourceTree = "<group>"; };
+		29D9BC2B248FA49B48405353 /* UserDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefault.swift; sourceTree = "<group>"; };
+		2D8584DF6C6C287428DE13B8 /* SnackBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnackBar.swift; sourceTree = "<group>"; };
+		2EB4A8E6AE3DE3E349AF790F /* Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
+		32B243EE6D5C198C7F263E8D /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		34BE3C425B0AA4595CD404C4 /* UserList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserList.swift; sourceTree = "<group>"; };
+		3599BC44D0AAA413C9F7330B /* UDSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UDSettings.swift; sourceTree = "<group>"; };
+		35D6C9139ECD09D938FFD886 /* DebugPrint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugPrint.swift; sourceTree = "<group>"; };
+		36E936F8A079AFEFB8F34A73 /* TransparentBlurView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransparentBlurView.swift; sourceTree = "<group>"; };
+		39C1C0C69EDF9714A7B520E4 /* OnboardingAppRegistry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingAppRegistry.swift; sourceTree = "<group>"; };
+		3CAE6A6EBEF57FEB13D69935 /* OnboardingRouterPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingRouterPath.swift; sourceTree = "<group>"; };
+		3E6C75B2E88F2417767E3B6F /* NetworkHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHelper.swift; sourceTree = "<group>"; };
+		3E86E1C07C59F3DD418C2A1A /* Encodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Encodable.swift; sourceTree = "<group>"; };
+		45338893325652C204D6739C /* Formatters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Formatters.swift; sourceTree = "<group>"; };
+		48F0D05E5DBE7252E309DA76 /* HapticsGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticsGenerator.swift; sourceTree = "<group>"; };
+		4B122B7C2F03C558C63233C4 /* ServerErrorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerErrorModel.swift; sourceTree = "<group>"; };
+		4E20A98E48702C14A8515610 /* HashableVoidCompletion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashableVoidCompletion.swift; sourceTree = "<group>"; };
+		54E16C44A55565FAB04E620C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		58D962E8718C309A13F7EB3C /* APITarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APITarget.swift; sourceTree = "<group>"; };
+		594EC44682ABE9B2102F2827 /* DashboardView+ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DashboardView+ViewModel.swift"; sourceTree = "<group>"; };
+		5B51C6E0570D19127DCD996F /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		5E10E96B1DDC3033E5A44E21 /* Dimension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dimension.swift; sourceTree = "<group>"; };
+		601F71FA0BDC6E0E31BA310F /* Collection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Collection.swift; sourceTree = "<group>"; };
+		61338111E83042BFF8E57333 /* ColorResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorResource.swift; sourceTree = "<group>"; };
+		62930C62CD037E3D75899E54 /* UserListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListView.swift; sourceTree = "<group>"; };
+		6B04E1006138CBD8A2D1D930 /* ShowAlertModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowAlertModifier.swift; sourceTree = "<group>"; };
+		70E3AF0B4EFB2DC18F5339C8 /* KFImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KFImageView.swift; sourceTree = "<group>"; };
+		72053898AB5BC95E1ED146A3 /* BaseResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseResponseModel.swift; sourceTree = "<group>"; };
+		738165178ED9DA44500A1DDA /* Bundle+Version.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Version.swift"; sourceTree = "<group>"; };
+		74107238A99266667E1C6A22 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		767595FC6B58DA47E08106A0 /* ViewDidLoadModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewDidLoadModifier.swift; sourceTree = "<group>"; };
+		76A4E91E24E1A28661578958 /* SecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondView.swift; sourceTree = "<group>"; };
+		76DB0BC5AE9D5010600FF702 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		787FAA48E6AC9857291C1E87 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		7D41D2BA263BE2151360B9C4 /* CustomError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomError.swift; sourceTree = "<group>"; };
+		7E7ED0D736658F00AE729083 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		7EC9B2CFFC72B9151FA8436E /* NetworkRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRepo.swift; sourceTree = "<group>"; };
+		80208D0D17BCA60A58C7166C /* View+Rotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Rotation.swift"; sourceTree = "<group>"; };
+		8068E3AC798B445F2EEB5180 /* Color.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Color.xcassets; sourceTree = "<group>"; };
+		813772F9AD39962156B0B3D3 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		898BE3E4D16E2D594CF7ABE2 /* AdaptivePadding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdaptivePadding.swift; sourceTree = "<group>"; };
+		8AD80B2E4017E864790A2B16 /* Int+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Extensions.swift"; sourceTree = "<group>"; };
+		8B583530D8B588B0F0117F0A /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		8B626ED3C2FC2F97FB23E8B6 /* FourthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthView.swift; sourceTree = "<group>"; };
+		8D10D04ED9F9BD412147DDE1 /* AdaptiveFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdaptiveFrame.swift; sourceTree = "<group>"; };
+		8D120CA3131936D5F0FF7CE7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		932BDD366FD2F09698F17CA8 /* GithubCopilotLearningApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubCopilotLearningApp.swift; sourceTree = "<group>"; };
+		9AD6A4AB54108DD7AD362570 /* Queue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
+		9DF0BBCAD5D29B5D577C33F1 /* RefreshTokenResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshTokenResponse.swift; sourceTree = "<group>"; };
+		A0FACEADE2FD364C2B2032F1 /* ReachabilityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReachabilityManager.swift; sourceTree = "<group>"; };
+		A3718810A2A48D6DA5420C4E /* URLFileAttribute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLFileAttribute.swift; sourceTree = "<group>"; };
+		A5D78F63097659BD5C748146 /* GithubCopilotLearningUITests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = GithubCopilotLearningUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A79053DD96F5F8CC958AE4A0 /* AdaptiveOffset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdaptiveOffset.swift; sourceTree = "<group>"; };
+		A971CF7BBCE9FAD3690B2D28 /* Tests.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Tests.plist; sourceTree = "<group>"; };
+		A9F5E97B5E505FF7EDBDC7AA /* KCSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KCSettings.swift; sourceTree = "<group>"; };
+		AA06AD1319DA57A9AEDADF8D /* GithubCopilotLearningTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubCopilotLearningTests.swift; sourceTree = "<group>"; };
+		AB29C50E1438650BAC3F4AE9 /* CGFloat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGFloat.swift; sourceTree = "<group>"; };
+		AD2263CACD828B73AF3DFEC3 /* AttachmentFormData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttachmentFormData.swift; sourceTree = "<group>"; };
+		B21B5CE184E79C2A4E305782 /* R.generated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
+		B2D725ABDFFE9DA48DB6CB0D /* RefreshTokenRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshTokenRequest.swift; sourceTree = "<group>"; };
+		B6E82E1F07AA023A69BD3BE8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		BC7A062772DCE68B96FB3ACB /* UIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
+		C18AD3158DD4BFC27401B333 /* UserListRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListRequest.swift; sourceTree = "<group>"; };
+		C3E34D8ADFF70446B8F3DEEA /* Pods-GithubCopilotLearning.uat debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GithubCopilotLearning.uat debug.xcconfig"; path = "Target Support Files/Pods-GithubCopilotLearning/Pods-GithubCopilotLearning.uat debug.xcconfig"; sourceTree = "<group>"; };
+		C5724440A7709AEAF9DBD8C8 /* Formatters+Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Formatters+Date.swift"; sourceTree = "<group>"; };
+		C77DF6F22AA3A0FF1B8F0A6F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CAB8569F8A06C5B5B68F1227 /* UIDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIDevice.swift; sourceTree = "<group>"; };
+		CED39915A2FF54893342BA83 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		CF52A1679C04AB1DE8157B36 /* Pods-GithubCopilotLearning.uat release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GithubCopilotLearning.uat release.xcconfig"; path = "Target Support Files/Pods-GithubCopilotLearning/Pods-GithubCopilotLearning.uat release.xcconfig"; sourceTree = "<group>"; };
+		DE10126F3BC3772459E3F491 /* SnackBarIconTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnackBarIconTextView.swift; sourceTree = "<group>"; };
+		E0D01F7DF05AD61AB6D15FF0 /* GithubCopilotLearningTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = GithubCopilotLearningTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3E084F6A4045E75F4DC82AE /* AppResources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppResources.swift; sourceTree = "<group>"; };
+		E877061B629921B0E0112EEC /* Font+Custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+Custom.swift"; sourceTree = "<group>"; };
+		E8DB44992882CCAC08E77A91 /* NetworkRequestable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequestable.swift; sourceTree = "<group>"; };
+		EAD27891A43B20F60E371681 /* InfoPlist.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = InfoPlist.strings; sourceTree = "<group>"; };
+		EB91F273E73D9ABBEF81A4F4 /* URL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URL.swift; sourceTree = "<group>"; };
+		ECF683A72820E1ABFF14C4AC /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
+		F015A084535A34552F0C4C9A /* DateTimeFormat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTimeFormat.swift; sourceTree = "<group>"; };
+		F0CD745CE95C620BD0277B69 /* ThirdView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdView.swift; sourceTree = "<group>"; };
+		F1B451FB1BB4F9D509745E17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		F466805423779210CB9EE57C /* AdaptiveLayoutHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdaptiveLayoutHelper.swift; sourceTree = "<group>"; };
+		F53029DFB3CD2E6221E6FD8B /* GithubCopilotLearningUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubCopilotLearningUITests.swift; sourceTree = "<group>"; };
+		F68F980E9A4E1F018E8D512B /* GithubCopilotLearningUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubCopilotLearningUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F8D918647950C219113E6A8C /* Atomic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Atomic.swift; sourceTree = "<group>"; };
+		FA079C65498269F952B07DED /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		FA50F34FA831CDFF0E618398 /* SwiftUIWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIWrapper.swift; sourceTree = "<group>"; };
+		FD358C6D1ADC83F39C59330C /* KeychainOperations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainOperations.swift; sourceTree = "<group>"; };
+		FEF5518AEAE3EA8F3A8E3065 /* Pods_GithubCopilotLearning.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GithubCopilotLearning.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF2BF0EB126572A886CA58FF /* UserDefaultsContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsContainer.swift; sourceTree = "<group>"; };
+		FF5FCC2A081A651FBCC39556 /* LibraryPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryPicker.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D105284FE48844539F2594A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF99A5C92E48A5DF2D99AEAF /* NetworkEngine in Frameworks */,
+				44AF2280FFC3FB3C9A753B57 /* Logging in Frameworks */,
+				D0588D60432195EFB8DCC052 /* Alamofire in Frameworks */,
+				4FDD4688497C8160AF88F471 /* Pods_GithubCopilotLearning.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		063A93B89CEF87BBC5E7903F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				54E16C44A55565FAB04E620C /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		083714E2287B1B98292FD67C /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				4B122B7C2F03C558C63233C4 /* ServerErrorModel.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		11C2CDA50007FB190E0DF583 /* KFImage */ = {
+			isa = PBXGroup;
+			children = (
+				70E3AF0B4EFB2DC18F5339C8 /* KFImageView.swift */,
+			);
+			path = KFImage;
+			sourceTree = "<group>";
+		};
+		1DB984EEB1078124AEB36C01 /* ItemDetail */ = {
+			isa = PBXGroup;
+			children = (
+				0F3C0FD6CB4D87F85703B4C2 /* ItemDetailAppRegistry.swift */,
+				169135D1B00F2633929BB87A /* ItemDetailRouterPath.swift */,
+			);
+			path = ItemDetail;
+			sourceTree = "<group>";
+		};
+		229558CD649BC13BEDA058D0 /* GithubCopilotLearningTests */ = {
+			isa = PBXGroup;
+			children = (
+				AA06AD1319DA57A9AEDADF8D /* GithubCopilotLearningTests.swift */,
+			);
+			path = GithubCopilotLearningTests;
+			sourceTree = "<group>";
+		};
+		28010B15DD7B7F1EFF8ED651 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8B626ED3C2FC2F97FB23E8B6 /* FourthView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		287CD87E8134E93279594310 /* Routers */ = {
+			isa = PBXGroup;
+			children = (
+				1DB984EEB1078124AEB36C01 /* ItemDetail */,
+				923B9B410B4E0BF10823DFD8 /* Onboardings */,
+			);
+			path = Routers;
+			sourceTree = "<group>";
+		};
+		30FA46554F95774BCBC802DC = {
+			isa = PBXGroup;
+			children = (
+				F723F9505EDF2CF2A64905ED /* GithubCopilotLearning */,
+				229558CD649BC13BEDA058D0 /* GithubCopilotLearningTests */,
+				4F03DD78CBD1FD2317D1D429 /* GithubCopilotLearningUITests */,
+				7D1B30F709D22432AFF29E91 /* Products */,
+				B52BE3626201C137B65AEFE5 /* Pods */,
+				AA6870846335ABC6B6B47CD1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		321A3F3872CF7AE280CD4659 /* Modifier */ = {
+			isa = PBXGroup;
+			children = (
+				13BAB4032683E028B5F34022 /* MoveContentAboveKeyboard.swift */,
+				6B04E1006138CBD8A2D1D930 /* ShowAlertModifier.swift */,
+				767595FC6B58DA47E08106A0 /* ViewDidLoadModifier.swift */,
+			);
+			path = Modifier;
+			sourceTree = "<group>";
+		};
+		3264271DA28F8B678285C51D /* Date */ = {
+			isa = PBXGroup;
+			children = (
+				F015A084535A34552F0C4C9A /* DateTimeFormat.swift */,
+			);
+			path = Date;
+			sourceTree = "<group>";
+		};
+		32CBA7F8A33D10B07421DD40 /* Formatter */ = {
+			isa = PBXGroup;
+			children = (
+				45338893325652C204D6739C /* Formatters.swift */,
+				C5724440A7709AEAF9DBD8C8 /* Formatters+Date.swift */,
+			);
+			path = Formatter;
+			sourceTree = "<group>";
+		};
+		341AE95210D37274B93B34F4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E3E084F6A4045E75F4DC82AE /* AppResources.swift */,
+				C77DF6F22AA3A0FF1B8F0A6F /* Assets.xcassets */,
+				8068E3AC798B445F2EEB5180 /* Color.xcassets */,
+				B21B5CE184E79C2A4E305782 /* R.generated.swift */,
+				637DFEF17329D7D706281D3B /* Localization */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		4BAAAF312A65ECF63EDE8519 /* Shimmer */ = {
+			isa = PBXGroup;
+			children = (
+				1352694E71FBAB6849B2CEEA /* ShimmerView.swift */,
+			);
+			path = Shimmer;
+			sourceTree = "<group>";
+		};
+		4E9810FDD3CE61DC7EA81190 /* Modifier */ = {
+			isa = PBXGroup;
+			children = (
+				8D10D04ED9F9BD412147DDE1 /* AdaptiveFrame.swift */,
+				A79053DD96F5F8CC958AE4A0 /* AdaptiveOffset.swift */,
+				898BE3E4D16E2D594CF7ABE2 /* AdaptivePadding.swift */,
+			);
+			path = Modifier;
+			sourceTree = "<group>";
+		};
+		4F03DD78CBD1FD2317D1D429 /* GithubCopilotLearningUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F53029DFB3CD2E6221E6FD8B /* GithubCopilotLearningUITests.swift */,
+				F68F980E9A4E1F018E8D512B /* GithubCopilotLearningUITestsLaunchTests.swift */,
+			);
+			path = GithubCopilotLearningUITests;
+			sourceTree = "<group>";
+		};
+		54649826139A436F12A6029A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				738165178ED9DA44500A1DDA /* Bundle+Version.swift */,
+				601F71FA0BDC6E0E31BA310F /* Collection.swift */,
+				813772F9AD39962156B0B3D3 /* Color.swift */,
+				61338111E83042BFF8E57333 /* ColorResource.swift */,
+				FA079C65498269F952B07DED /* Date.swift */,
+				3E86E1C07C59F3DD418C2A1A /* Encodable.swift */,
+				E877061B629921B0E0112EEC /* Font+Custom.swift */,
+				8AD80B2E4017E864790A2B16 /* Int+Extensions.swift */,
+				172AC016B4435A48D4DE7DBD /* String.swift */,
+				BC7A062772DCE68B96FB3ACB /* UIApplication.swift */,
+				CAB8569F8A06C5B5B68F1227 /* UIDevice.swift */,
+				ECF683A72820E1ABFF14C4AC /* UIImage.swift */,
+				32B243EE6D5C198C7F263E8D /* UIView.swift */,
+				EB91F273E73D9ABBEF81A4F4 /* URL.swift */,
+				5B51C6E0570D19127DCD996F /* View.swift */,
+				80208D0D17BCA60A58C7166C /* View+Rotation.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		55F1D686B5F64B481F0F033C /* ThirdView */ = {
+			isa = PBXGroup;
+			children = (
+				9352CF47A75FAD58008760C9 /* View */,
+			);
+			path = ThirdView;
+			sourceTree = "<group>";
+		};
+		56DFEA776A49AF4C767B1CA2 /* NetworkLayer */ = {
+			isa = PBXGroup;
+			children = (
+				58D962E8718C309A13F7EB3C /* APITarget.swift */,
+				1D204D9D72AE34219BEEA9D7 /* ErrorConverter.swift */,
+				3E6C75B2E88F2417767E3B6F /* NetworkHelper.swift */,
+				7EC9B2CFFC72B9151FA8436E /* NetworkRepo.swift */,
+				E8DB44992882CCAC08E77A91 /* NetworkRequestable.swift */,
+				A0FACEADE2FD364C2B2032F1 /* ReachabilityManager.swift */,
+			);
+			path = NetworkLayer;
+			sourceTree = "<group>";
+		};
+		5CC6A1CCA325D613D5ECEBBA /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				2EB4A8E6AE3DE3E349AF790F /* Device.swift */,
+				5E10E96B1DDC3033E5A44E21 /* Dimension.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		5EB2E0163A71A87C028094A3 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				A2310E67EE19CF2CC17E6B02 /* Subviews */,
+				9BDF0C95284291B0C076B0F6 /* View */,
+				D52D42706010C2BFCF2437D5 /* ViewModel */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		637DFEF17329D7D706281D3B /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				EAD27891A43B20F60E371681 /* InfoPlist.strings */,
+				787FAA48E6AC9857291C1E87 /* Localizable.strings */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
+		64E735F63BA20620426C0493 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8B583530D8B588B0F0117F0A /* LoginView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6935C180F444603C63D451CF /* Plist */ = {
+			isa = PBXGroup;
+			children = (
+				F1B451FB1BB4F9D509745E17 /* Info.plist */,
+				A971CF7BBCE9FAD3690B2D28 /* Tests.plist */,
+				115CAF962EC2E844A66B9CED /* UITests.plist */,
+			);
+			path = Plist;
+			sourceTree = "<group>";
+		};
+		740FA0B719398BE24995F05D /* ImagePicker */ = {
+			isa = PBXGroup;
+			children = (
+				74107238A99266667E1C6A22 /* ImagePicker.swift */,
+				FF5FCC2A081A651FBCC39556 /* LibraryPicker.swift */,
+			);
+			path = ImagePicker;
+			sourceTree = "<group>";
+		};
+		7D1B30F709D22432AFF29E91 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				28B19781B91089BEB92BAC7F /* GithubCopilotLearning.app */,
+				E0D01F7DF05AD61AB6D15FF0 /* GithubCopilotLearningTests.xctest */,
+				A5D78F63097659BD5C748146 /* GithubCopilotLearningUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		849A01F64486F8349DB1F959 /* Reusables */ = {
+			isa = PBXGroup;
+			children = (
+				48F0D05E5DBE7252E309DA76 /* HapticsGenerator.swift */,
+				FA50F34FA831CDFF0E618398 /* SwiftUIWrapper.swift */,
+				A3718810A2A48D6DA5420C4E /* URLFileAttribute.swift */,
+				32CBA7F8A33D10B07421DD40 /* Formatter */,
+				FFB53813C94B4412CDF7AC83 /* SnackBar */,
+			);
+			path = Reusables;
+			sourceTree = "<group>";
+		};
+		8C7FEEBB6B26E07BF0094034 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				1DE57B9961AE291ACD91404B /* AppSecrets.swift */,
+				CED39915A2FF54893342BA83 /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		8FC70D2E42B6D80D4DEE872A /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				5EB2E0163A71A87C028094A3 /* Dashboard */,
+				B54A6E41E52EA94C79B204B3 /* FourthView */,
+				CD44485D00C1E763A7522CD9 /* Login */,
+				EE7F13CEFE517BA89D7D781C /* SecondView */,
+				55F1D686B5F64B481F0F033C /* ThirdView */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		92188301F4A0F58D38A6806D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				083714E2287B1B98292FD67C /* Error */,
+				BC272E5D863D31A41D644588 /* Request */,
+				F252215C8BEBC4AB526CFEB5 /* Response */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		923B9B410B4E0BF10823DFD8 /* Onboardings */ = {
+			isa = PBXGroup;
+			children = (
+				39C1C0C69EDF9714A7B520E4 /* OnboardingAppRegistry.swift */,
+				3CAE6A6EBEF57FEB13D69935 /* OnboardingRouterPath.swift */,
+			);
+			path = Onboardings;
+			sourceTree = "<group>";
+		};
+		925ABC5F4061358B36FFD7CC /* Logger */ = {
+			isa = PBXGroup;
+			children = (
+				76DB0BC5AE9D5010600FF702 /* Logger.swift */,
+			);
+			path = Logger;
+			sourceTree = "<group>";
+		};
+		9352CF47A75FAD58008760C9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F0CD745CE95C620BD0277B69 /* ThirdView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9BDF0C95284291B0C076B0F6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7E7ED0D736658F00AE729083 /* DashboardView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A2310E67EE19CF2CC17E6B02 /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				62930C62CD037E3D75899E54 /* UserListView.swift */,
+			);
+			path = Subviews;
+			sourceTree = "<group>";
+		};
+		A5D69B3E50FB6597F80D8F4A /* Completion */ = {
+			isa = PBXGroup;
+			children = (
+				4E20A98E48702C14A8515610 /* HashableVoidCompletion.swift */,
+			);
+			path = Completion;
+			sourceTree = "<group>";
+		};
+		AA6870846335ABC6B6B47CD1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FEF5518AEAE3EA8F3A8E3065 /* Pods_GithubCopilotLearning.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ACD20B46737FA180D9FC7C68 /* Keychain */ = {
+			isa = PBXGroup;
+			children = (
+				A9F5E97B5E505FF7EDBDC7AA /* KCSettings.swift */,
+				FD358C6D1ADC83F39C59330C /* KeychainOperations.swift */,
+				19C7DE6364FD342AB3D5C9EF /* KeychainStorageContainer.swift */,
+				29456F61DECBDA082E3C7E98 /* KeyChainWrapper.swift */,
+			);
+			path = Keychain;
+			sourceTree = "<group>";
+		};
+		B32B713994522961BF5B346B /* AdaptiveLayout */ = {
+			isa = PBXGroup;
+			children = (
+				F466805423779210CB9EE57C /* AdaptiveLayoutHelper.swift */,
+				5CC6A1CCA325D613D5ECEBBA /* Enums */,
+				E92EAEF1FEAD7E857EF2BD55 /* Extension */,
+				4E9810FDD3CE61DC7EA81190 /* Modifier */,
+			);
+			path = AdaptiveLayout;
+			sourceTree = "<group>";
+		};
+		B52BE3626201C137B65AEFE5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				11071CF47676E364F47875CC /* Pods-GithubCopilotLearning.staging debug.xcconfig */,
+				0D12CCFA7005FE8FA51BD1F1 /* Pods-GithubCopilotLearning.staging release.xcconfig */,
+				C3E34D8ADFF70446B8F3DEEA /* Pods-GithubCopilotLearning.uat debug.xcconfig */,
+				CF52A1679C04AB1DE8157B36 /* Pods-GithubCopilotLearning.uat release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B54A6E41E52EA94C79B204B3 /* FourthView */ = {
+			isa = PBXGroup;
+			children = (
+				28010B15DD7B7F1EFF8ED651 /* View */,
+			);
+			path = FourthView;
+			sourceTree = "<group>";
+		};
+		B70195BB4F454ABD06DD67C6 /* UserDefaults */ = {
+			isa = PBXGroup;
+			children = (
+				3599BC44D0AAA413C9F7330B /* UDSettings.swift */,
+				29D9BC2B248FA49B48405353 /* UserDefault.swift */,
+				FF2BF0EB126572A886CA58FF /* UserDefaultsContainer.swift */,
+			);
+			path = UserDefaults;
+			sourceTree = "<group>";
+		};
+		BC272E5D863D31A41D644588 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				AD2263CACD828B73AF3DFEC3 /* AttachmentFormData.swift */,
+				B2D725ABDFFE9DA48DB6CB0D /* RefreshTokenRequest.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		CD44485D00C1E763A7522CD9 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				64E735F63BA20620426C0493 /* View */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		D52D42706010C2BFCF2437D5 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				594EC44682ABE9B2102F2827 /* DashboardView+ViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D8D4B631F01AD6F3D640B3E0 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				F8D918647950C219113E6A8C /* Atomic.swift */,
+				7D41D2BA263BE2151360B9C4 /* CustomError.swift */,
+				35D6C9139ECD09D938FFD886 /* DebugPrint.swift */,
+				9AD6A4AB54108DD7AD362570 /* Queue.swift */,
+				B32B713994522961BF5B346B /* AdaptiveLayout */,
+				A5D69B3E50FB6597F80D8F4A /* Completion */,
+				3264271DA28F8B678285C51D /* Date */,
+				740FA0B719398BE24995F05D /* ImagePicker */,
+				ACD20B46737FA180D9FC7C68 /* Keychain */,
+				11C2CDA50007FB190E0DF583 /* KFImage */,
+				D962F0E937B36DE4D2D85404 /* PushNotification */,
+				4BAAAF312A65ECF63EDE8519 /* Shimmer */,
+				B70195BB4F454ABD06DD67C6 /* UserDefaults */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		D962F0E937B36DE4D2D85404 /* PushNotification */ = {
+			isa = PBXGroup;
+			children = (
+				19251CD6F154E01E0516C3F2 /* NotificationsHelper.swift */,
+			);
+			path = PushNotification;
+			sourceTree = "<group>";
+		};
+		E13E2362D3A2202E726E0C40 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				76A4E91E24E1A28661578958 /* SecondView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E92EAEF1FEAD7E857EF2BD55 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				AB29C50E1438650BAC3F4AE9 /* CGFloat.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		EE7F13CEFE517BA89D7D781C /* SecondView */ = {
+			isa = PBXGroup;
+			children = (
+				E13E2362D3A2202E726E0C40 /* View */,
+			);
+			path = SecondView;
+			sourceTree = "<group>";
+		};
+		F252215C8BEBC4AB526CFEB5 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				72053898AB5BC95E1ED146A3 /* BaseResponseModel.swift */,
+				9DF0BBCAD5D29B5D577C33F1 /* RefreshTokenResponse.swift */,
+				34BE3C425B0AA4595CD404C4 /* UserList.swift */,
+				C18AD3158DD4BFC27401B333 /* UserListRequest.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		F723F9505EDF2CF2A64905ED /* GithubCopilotLearning */ = {
+			isa = PBXGroup;
+			children = (
+				8D120CA3131936D5F0FF7CE7 /* AppDelegate.swift */,
+				B6E82E1F07AA023A69BD3BE8 /* SceneDelegate.swift */,
+				932BDD366FD2F09698F17CA8 /* GithubCopilotLearningApp.swift */,
+				8C7FEEBB6B26E07BF0094034 /* Constants */,
+				54649826139A436F12A6029A /* Extensions */,
+				D8D4B631F01AD6F3D640B3E0 /* Helpers */,
+				925ABC5F4061358B36FFD7CC /* Logger */,
+				92188301F4A0F58D38A6806D /* Models */,
+				321A3F3872CF7AE280CD4659 /* Modifier */,
+				56DFEA776A49AF4C767B1CA2 /* NetworkLayer */,
+				6935C180F444603C63D451CF /* Plist */,
+				063A93B89CEF87BBC5E7903F /* Preview Content */,
+				341AE95210D37274B93B34F4 /* Resources */,
+				849A01F64486F8349DB1F959 /* Reusables */,
+				287CD87E8134E93279594310 /* Routers */,
+				8FC70D2E42B6D80D4DEE872A /* Scenes */,
+			);
+			path = GithubCopilotLearning;
+			sourceTree = "<group>";
+		};
+		FFB53813C94B4412CDF7AC83 /* SnackBar */ = {
+			isa = PBXGroup;
+			children = (
+				2D8584DF6C6C287428DE13B8 /* SnackBar.swift */,
+				DE10126F3BC3772459E3F491 /* SnackBarIconTextView.swift */,
+				36E936F8A079AFEFB8F34A73 /* TransparentBlurView.swift */,
+			);
+			path = SnackBar;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		88D2C5D41A0ECC40B6319583 /* GithubCopilotLearningTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 95A86862C84FA2DCCECD3613 /* Build configuration list for PBXNativeTarget "GithubCopilotLearningTests" */;
+			buildPhases = (
+				D86780B8CD82E4972353C874 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E908F3B297857E2D210C8565 /* PBXTargetDependency */,
+			);
+			name = GithubCopilotLearningTests;
+			productName = GithubCopilotLearningTests;
+			productReference = E0D01F7DF05AD61AB6D15FF0 /* GithubCopilotLearningTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A73CA16973A946D0F0D3CB71 /* GithubCopilotLearningUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7511AB81AE0E964046606239 /* Build configuration list for PBXNativeTarget "GithubCopilotLearningUITests" */;
+			buildPhases = (
+				B126B7811BAD4F0E06DA982D /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6C0BF18102C713C1AF3E3B20 /* PBXTargetDependency */,
+			);
+			name = GithubCopilotLearningUITests;
+			productName = GithubCopilotLearningUITests;
+			productReference = A5D78F63097659BD5C748146 /* GithubCopilotLearningUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		B374EB17A19B70105282141D /* GithubCopilotLearning */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 667FCB6BA057BA66F707870C /* Build configuration list for PBXNativeTarget "GithubCopilotLearning" */;
+			buildPhases = (
+				C7EBF28271EE8DA5BB093FE3 /* [CP] Check Pods Manifest.lock */,
+				5D28D2D857B8A9D3BCC1E36E /* R.swift */,
+				28EF312F1AC03129F42881D7 /* Swiftlint */,
+				440F391EE1F6C759015E1C82 /* Sources */,
+				BE12CF1F7DE6D9961B3A0955 /* Resources */,
+				D105284FE48844539F2594A5 /* Frameworks */,
+				0DAED0CC5CFBB0A400B293F6 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GithubCopilotLearning;
+			packageProductDependencies = (
+				D250974042DF823780244EB0 /* NetworkEngine */,
+				27F4058A94D83CC07B88A82D /* Logging */,
+				2F20B74B7954B054783F2208 /* Alamofire */,
+			);
+			productName = GithubCopilotLearning;
+			productReference = 28B19781B91089BEB92BAC7F /* GithubCopilotLearning.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		69BE95AE86B7402A33987725 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				LastUpgradeVersion = 1500;
+				TargetAttributes = {
+					A73CA16973A946D0F0D3CB71 = {
+						TestTargetID = B374EB17A19B70105282141D;
+					};
+				};
+			};
+			buildConfigurationList = DB604D32683E24D8942D4DF0 /* Build configuration list for PBXProject "GithubCopilotLearning" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 30FA46554F95774BCBC802DC;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				FFF9A084F69417F888FE3FBC /* XCRemoteSwiftPackageReference "Alamofire" */,
+				36367826BAF553B1AF5DA042 /* XCRemoteSwiftPackageReference "swift-log" */,
+				D271365075E06B603B038B5E /* XCRemoteSwiftPackageReference "NetworkEngineXC" */,
+			);
+			preferredProjectObjectVersion = 54;
+			productRefGroup = 7D1B30F709D22432AFF29E91 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B374EB17A19B70105282141D /* GithubCopilotLearning */,
+				88D2C5D41A0ECC40B6319583 /* GithubCopilotLearningTests */,
+				A73CA16973A946D0F0D3CB71 /* GithubCopilotLearningUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BE12CF1F7DE6D9961B3A0955 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F0081DBE996970555FCBFAA /* Assets.xcassets in Resources */,
+				3EBFBAA02C5BD7252982C33C /* Color.xcassets in Resources */,
+				BD688DE63B1C621383BD2EEE /* InfoPlist.strings in Resources */,
+				EAA3FDE75AFE7A392805D856 /* Localizable.strings in Resources */,
+				12DABDA4F3A80EF04D3D3722 /* Preview Assets.xcassets in Resources */,
+				D51E21C1F6AC42C137A24E20 /* Tests.plist in Resources */,
+				DE8CDB039891512B70F2939F /* UITests.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0DAED0CC5CFBB0A400B293F6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GithubCopilotLearning/Pods-GithubCopilotLearning-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GithubCopilotLearning/Pods-GithubCopilotLearning-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GithubCopilotLearning/Pods-GithubCopilotLearning-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		28EF312F1AC03129F42881D7 /* Swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Swiftlint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+		};
+		5D28D2D857B8A9D3BCC1E36E /* R.swift */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = R.swift;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/GithubCopilotLearning/Resources/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/GithubCopilotLearning/Resources/R.generated.swift\"\n";
+		};
+		C7EBF28271EE8DA5BB093FE3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GithubCopilotLearning-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		440F391EE1F6C759015E1C82 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23BE600DA4F7200473A58548 /* APITarget.swift in Sources */,
+				7DA3373952C31A7A2D3B03EE /* AdaptiveFrame.swift in Sources */,
+				1B7035B615570A77F1CCCE3F /* AdaptiveLayoutHelper.swift in Sources */,
+				BABBFCC9689316683E5E2F19 /* AdaptiveOffset.swift in Sources */,
+				359A7BA90EB1ACBEB37373DB /* AdaptivePadding.swift in Sources */,
+				AE9A5AD7B37A3DCD65CB2995 /* AppDelegate.swift in Sources */,
+				4C8F0D38C7F2CE3A518B6E21 /* AppResources.swift in Sources */,
+				358588FF583862ED33417303 /* AppSecrets.swift in Sources */,
+				DDE25BBAD5F860FA3C87F640 /* Atomic.swift in Sources */,
+				7442FFB36C82DEB688FE6B70 /* AttachmentFormData.swift in Sources */,
+				3932E551DD65FB658046CB99 /* BaseResponseModel.swift in Sources */,
+				59A0C86909936222352F630C /* Bundle+Version.swift in Sources */,
+				861FFCF7E6D57A9862CE7FB7 /* CGFloat.swift in Sources */,
+				57C986B152AC7559DF6C5E81 /* Collection.swift in Sources */,
+				0C097FFA8633ED88F64FAFD1 /* Color.swift in Sources */,
+				49840CC968A1C3BD4B5F9248 /* ColorResource.swift in Sources */,
+				15A2DD176ABE3BBD7791C27F /* Constants.swift in Sources */,
+				0F1F9A90FB1F9D44095119BA /* CustomError.swift in Sources */,
+				C05D7DD5C45484246DAA6ADC /* DashboardView+ViewModel.swift in Sources */,
+				3490AB3ECDF4E6BDB7D428BC /* DashboardView.swift in Sources */,
+				72AE596C3F2AB8D9D9BD684B /* Date.swift in Sources */,
+				9D2161FB18B0F63FEE35B112 /* DateTimeFormat.swift in Sources */,
+				764D51AC7A373B86688D1B8B /* DebugPrint.swift in Sources */,
+				B8F9E56E1A19794D96BC874D /* Device.swift in Sources */,
+				F3D899AA7350A0A07A4DCAEE /* Dimension.swift in Sources */,
+				ECF33CD140BF102AA692A66D /* Encodable.swift in Sources */,
+				E57BA4B62DD93D2E9E3AA88A /* ErrorConverter.swift in Sources */,
+				4C2B54B23C0C4ECEF1CE7AE0 /* Font+Custom.swift in Sources */,
+				153AF2B9644CFAFA2936E580 /* Formatters+Date.swift in Sources */,
+				EE5A882E92F4A4BD309F477D /* Formatters.swift in Sources */,
+				6A9258085E05881C0EB93CE7 /* FourthView.swift in Sources */,
+				E988633C70F6C3969996B688 /* HapticsGenerator.swift in Sources */,
+				FC1F67D6E07CC54C83BC8BCF /* HashableVoidCompletion.swift in Sources */,
+				FE5EB507C4696CFD5B00E716 /* ImagePicker.swift in Sources */,
+				E74F0CAB1386463D76D66284 /* Int+Extensions.swift in Sources */,
+				5CEDF8C4AF80EC00B414F512 /* ItemDetailAppRegistry.swift in Sources */,
+				773C1EC5B03BA281AECF226F /* ItemDetailRouterPath.swift in Sources */,
+				18AD1537F4F3277133F20648 /* KCSettings.swift in Sources */,
+				EF7400D0B48BB8202547BE5A /* KFImageView.swift in Sources */,
+				A9D2DE4E090E528EA96F02BB /* KeyChainWrapper.swift in Sources */,
+				B29CAF75D45918C7DD9B4552 /* KeychainOperations.swift in Sources */,
+				80F27C2226AF4C83B4BA483B /* KeychainStorageContainer.swift in Sources */,
+				95BD539F71C05883844AAB68 /* LibraryPicker.swift in Sources */,
+				5C001A0623E1196308AC46E5 /* Logger.swift in Sources */,
+				8A84ED5AE5233912ACFB7055 /* LoginView.swift in Sources */,
+				E0E9EC21DE7CBD414BBAACAF /* MoveContentAboveKeyboard.swift in Sources */,
+				6A8492D3CED5CB394FF30D91 /* NetworkHelper.swift in Sources */,
+				B1A213A78698F9D39A53FD0C /* NetworkRepo.swift in Sources */,
+				6AE95B84C0D3573EE702EC0B /* NetworkRequestable.swift in Sources */,
+				EBE7C070F50EF73F078F41AE /* NotificationsHelper.swift in Sources */,
+				369A1CBE1530ADC46E49C60A /* OnboardingAppRegistry.swift in Sources */,
+				0EA89C0A4B4A8422CC510A4B /* OnboardingRouterPath.swift in Sources */,
+				0D57D882C77D465CB88C876E /* Queue.swift in Sources */,
+				0302F8DFA83CB030116FEC5C /* R.generated.swift in Sources */,
+				19B83E5D4CC2506549BBB4E2 /* ReachabilityManager.swift in Sources */,
+				0A744A3992FF5F3AF023EE66 /* RefreshTokenRequest.swift in Sources */,
+				92C9D3DF9045DE34FBE96970 /* RefreshTokenResponse.swift in Sources */,
+				20E77A023950BA381C8CABC6 /* SceneDelegate.swift in Sources */,
+				2E88E567920A61BB782B7535 /* SecondView.swift in Sources */,
+				2E19ADB5C3F9D53F0DBFCF63 /* ServerErrorModel.swift in Sources */,
+				1A875268F825A213C350536D /* ShimmerView.swift in Sources */,
+				6E862FC0754A40D07B8589EB /* ShowAlertModifier.swift in Sources */,
+				8AA3971992AF6FC387D6DCE9 /* SnackBar.swift in Sources */,
+				5F56B1DA281F95ECA2267ECF /* SnackBarIconTextView.swift in Sources */,
+				C69FE7E3CE90E8C2D5039378 /* String.swift in Sources */,
+				54100B9687DF3A291F1EB62B /* GithubCopilotLearningApp.swift in Sources */,
+				A916BB409E825FC1850F0EE9 /* SwiftUIWrapper.swift in Sources */,
+				C8EC687E14427D4D50E8715E /* ThirdView.swift in Sources */,
+				AA46B558D62CE2B6C8EDD421 /* TransparentBlurView.swift in Sources */,
+				8DAF58BDE57397BFB516CCBA /* UDSettings.swift in Sources */,
+				EF2EC904DD111DA1992A3941 /* UIApplication.swift in Sources */,
+				0C54D0EF55544AAD32FC0000 /* UIDevice.swift in Sources */,
+				272782780DCE12087A25E790 /* UIImage.swift in Sources */,
+				4C83EE8E8FBEE709BFF3B152 /* UIView.swift in Sources */,
+				3513749EDB8227C4ADF9AAD4 /* URL.swift in Sources */,
+				38AA3ED7B1A0AD43DAF71F51 /* URLFileAttribute.swift in Sources */,
+				43C8A8E400DC75E381C31322 /* UserDefault.swift in Sources */,
+				84CE3CD7A5408C85A5BCE98C /* UserDefaultsContainer.swift in Sources */,
+				753630DBE2C5253602DD9F8D /* UserList.swift in Sources */,
+				B8651F42C9A7A8B6437CB9B7 /* UserListRequest.swift in Sources */,
+				D8F6D1391E0C6D08DD8320EE /* UserListView.swift in Sources */,
+				0880E9F2F6FE9BEA649B7119 /* View+Rotation.swift in Sources */,
+				D7457D30C1A8E7864B12DCD1 /* View.swift in Sources */,
+				DEE554ABB75223F35D691ED8 /* ViewDidLoadModifier.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B126B7811BAD4F0E06DA982D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				718BB6C00FC384340B932AF2 /* GithubCopilotLearningUITests.swift in Sources */,
+				45AFFA8F241358518F123A68 /* GithubCopilotLearningUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D86780B8CD82E4972353C874 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				364629119FEDF6925F4DB592 /* GithubCopilotLearningTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6C0BF18102C713C1AF3E3B20 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B374EB17A19B70105282141D /* GithubCopilotLearning */;
+			targetProxy = D1770C6C2810F417AA7ABD3E /* PBXContainerItemProxy */;
+		};
+		E908F3B297857E2D210C8565 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B374EB17A19B70105282141D /* GithubCopilotLearning */;
+			targetProxy = C90D8D3E9E104DE4064237A0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		05245F7BAC8BC97A436F570D /* UAT release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF52A1679C04AB1DE8157B36 /* Pods-GithubCopilotLearning.uat release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = GithubCopilotLearning/Plist/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.simform.GithubCopilotLearning;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = "UAT release";
+		};
+		0C7C35BAFA42F9158B45B5D3 /* UAT release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = /Users/rishita/Desktop/GithubCopilotLearning/UITests.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.simform.GithubCopilotLearning.uitests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GithubCopilotLearning;
+			};
+			name = "UAT release";
+		};
+		13BB1166E542618F29870AD0 /* UAT debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C3E34D8ADFF70446B8F3DEEA /* Pods-GithubCopilotLearning.uat debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = GithubCopilotLearning/Plist/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.simform.GithubCopilotLearning;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = "UAT debug";
+		};
+		164CE3F36E73CFD2F77004B0 /* Staging debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = /Users/rishita/Desktop/GithubCopilotLearning/Tests.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.simform.GithubCopilotLearning.test;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GithubCopilotLearning.app/GithubCopilotLearning";
+			};
+			name = "Staging debug";
+		};
+		20AEAB8833B3970F41E51D8A /* UAT debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = /Users/rishita/Desktop/GithubCopilotLearning/UITests.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.simform.GithubCopilotLearning.uitests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GithubCopilotLearning;
+			};
+			name = "UAT debug";
+		};
+		3F034EB8F7885DF2341AB5BA /* Staging release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D12CCFA7005FE8FA51BD1F1 /* Pods-GithubCopilotLearning.staging release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = GithubCopilotLearning/Plist/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.simform.GithubCopilotLearning;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = "Staging release";
+		};
+		65D4C4A4525EA9735118A90F /* UAT release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = /Users/rishita/Desktop/GithubCopilotLearning/Tests.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.simform.GithubCopilotLearning.test;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GithubCopilotLearning.app/GithubCopilotLearning";
+			};
+			name = "UAT release";
+		};
+		9EE8D7FA95D849DAD9518328 /* Staging debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = /Users/rishita/Desktop/GithubCopilotLearning/UITests.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.simform.GithubCopilotLearning.uitests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GithubCopilotLearning;
+			};
+			name = "Staging debug";
+		};
+		9F96B952439A494677F468E8 /* Staging debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11071CF47676E364F47875CC /* Pods-GithubCopilotLearning.staging debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = GithubCopilotLearning/Plist/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.simform.GithubCopilotLearning;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = "Staging debug";
+		};
+		A2D7FA438716A3F001B9CE84 /* Staging release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = /Users/rishita/Desktop/GithubCopilotLearning/UITests.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.simform.GithubCopilotLearning.uitests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GithubCopilotLearning;
+			};
+			name = "Staging release";
+		};
+		C7ACC7E2510E3011E4226141 /* Staging debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = GithubCopilotLearning;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_SWIFT_FLAGS = "$(inherited) -D Staging -D ACCELERATE_NEW_LAPACK -D ACCELERATE_LAPACK_ILP64";
+				PRODUCT_BUNDLE_IDENTIFIER = com.simform.GithubCopilotLearning;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = "Staging debug";
+		};
+		C84C3EE018DB605707811533 /* UAT debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = GithubCopilotLearning;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_SWIFT_FLAGS = "$(inherited) -D UAT -D ACCELERATE_NEW_LAPACK -D ACCELERATE_LAPACK_ILP64";
+				PRODUCT_BUNDLE_IDENTIFIER = com.simform.GithubCopilotLearning;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = "UAT debug";
+		};
+		D2C63AC38A7C235185B8A5BC /* Staging release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = GithubCopilotLearning;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				OTHER_SWIFT_FLAGS = "$(inherited) -D Staging -D ACCELERATE_NEW_LAPACK -D ACCELERATE_LAPACK_ILP64";
+				PRODUCT_BUNDLE_IDENTIFIER = com.simform.GithubCopilotLearning;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = "Staging release";
+		};
+		D56F59DB71CE1F4919DFD690 /* Staging release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = /Users/rishita/Desktop/GithubCopilotLearning/Tests.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.simform.GithubCopilotLearning.test;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GithubCopilotLearning.app/GithubCopilotLearning";
+			};
+			name = "Staging release";
+		};
+		DA9CE7BC0B600E6EDA33AC91 /* UAT debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = /Users/rishita/Desktop/GithubCopilotLearning/Tests.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.simform.GithubCopilotLearning.test;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GithubCopilotLearning.app/GithubCopilotLearning";
+			};
+			name = "UAT debug";
+		};
+		FC670A135A826E0FCE9B8A71 /* UAT release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = GithubCopilotLearning;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				OTHER_SWIFT_FLAGS = "$(inherited) -D UAT -D ACCELERATE_NEW_LAPACK -D ACCELERATE_LAPACK_ILP64";
+				PRODUCT_BUNDLE_IDENTIFIER = com.simform.GithubCopilotLearning;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = "UAT release";
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		667FCB6BA057BA66F707870C /* Build configuration list for PBXNativeTarget "GithubCopilotLearning" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F96B952439A494677F468E8 /* Staging debug */,
+				3F034EB8F7885DF2341AB5BA /* Staging release */,
+				13BB1166E542618F29870AD0 /* UAT debug */,
+				05245F7BAC8BC97A436F570D /* UAT release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Staging debug";
+		};
+		7511AB81AE0E964046606239 /* Build configuration list for PBXNativeTarget "GithubCopilotLearningUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9EE8D7FA95D849DAD9518328 /* Staging debug */,
+				A2D7FA438716A3F001B9CE84 /* Staging release */,
+				20AEAB8833B3970F41E51D8A /* UAT debug */,
+				0C7C35BAFA42F9158B45B5D3 /* UAT release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Staging debug";
+		};
+		95A86862C84FA2DCCECD3613 /* Build configuration list for PBXNativeTarget "GithubCopilotLearningTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				164CE3F36E73CFD2F77004B0 /* Staging debug */,
+				D56F59DB71CE1F4919DFD690 /* Staging release */,
+				DA9CE7BC0B600E6EDA33AC91 /* UAT debug */,
+				65D4C4A4525EA9735118A90F /* UAT release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Staging debug";
+		};
+		DB604D32683E24D8942D4DF0 /* Build configuration list for PBXProject "GithubCopilotLearning" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7ACC7E2510E3011E4226141 /* Staging debug */,
+				D2C63AC38A7C235185B8A5BC /* Staging release */,
+				C84C3EE018DB605707811533 /* UAT debug */,
+				FC670A135A826E0FCE9B8A71 /* UAT release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Staging debug";
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		36367826BAF553B1AF5DA042 /* XCRemoteSwiftPackageReference "swift-log" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-log.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		D271365075E06B603B038B5E /* XCRemoteSwiftPackageReference "NetworkEngineXC" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mobile-simformsolutions/NetworkEngineXC.git";
+			requirement = {
+				kind = exactVersion;
+				version = 2.0.1;
+			};
+		};
+		FFF9A084F69417F888FE3FBC /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = exactVersion;
+				version = 5.9.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		27F4058A94D83CC07B88A82D /* Logging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 36367826BAF553B1AF5DA042 /* XCRemoteSwiftPackageReference "swift-log" */;
+			productName = Logging;
+		};
+		2F20B74B7954B054783F2208 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FFF9A084F69417F888FE3FBC /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		D250974042DF823780244EB0 /* NetworkEngine */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D271365075E06B603B038B5E /* XCRemoteSwiftPackageReference "NetworkEngineXC" */;
+			productName = NetworkEngine;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 69BE95AE86B7402A33987725 /* Project object */;
+}

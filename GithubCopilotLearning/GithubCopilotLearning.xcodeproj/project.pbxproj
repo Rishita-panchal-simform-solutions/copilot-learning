@@ -1,0 +1,823 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+/* Begin PBXBuildFile section */
+		44AF2280FFC3FB3C9A753B57 /* Logging in Frameworks */ = {isa = PBXBuildFile; productRef = 27F4058A94D83CC07B88A82D /* Logging */; };
+		D0588D60432195EFB8DCC052 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 2F20B74B7954B054783F2208 /* Alamofire */; };
+		DF99A5C92E48A5DF2D99AEAF /* NetworkEngine in Frameworks */ = {isa = PBXBuildFile; productRef = D250974042DF823780244EB0 /* NetworkEngine */; };
+/* End PBXBuildFile section */
+/* Begin PBXContainerItemProxy section */
+		C90D8D3E9E104DE4064237A0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 69BE95AE86B7402A33987725 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B374EB17A19B70105282141D;
+			remoteInfo = GithubCopilotLearning;
+		};
+		D1770C6C2810F417AA7ABD3E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 69BE95AE86B7402A33987725 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B374EB17A19B70105282141D;
+			remoteInfo = GithubCopilotLearning;
+		};
+/* End PBXContainerItemProxy section */
+/* Begin PBXFileReference section */
+		28B19781B91089BEB92BAC7F /* GithubCopilotLearning.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = GithubCopilotLearning.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5D78F63097659BD5C748146 /* GithubCopilotLearningUITests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = GithubCopilotLearningUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0D01F7DF05AD61AB6D15FF0 /* GithubCopilotLearningTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = GithubCopilotLearningTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+/* Begin PBXFrameworksBuildPhase section */
+		D105284FE48844539F2594A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF99A5C92E48A5DF2D99AEAF /* NetworkEngine in Frameworks */,
+				44AF2280FFC3FB3C9A753B57 /* Logging in Frameworks */,
+				D0588D60432195EFB8DCC052 /* Alamofire in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+/* Begin PBXGroup section */
+		229558CD649BC13BEDA058D0 /* GithubCopilotLearningTests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = GithubCopilotLearningTests;
+			sourceTree = "<group>";
+		};
+		30FA46554F95774BCBC802DC = {
+			isa = PBXGroup;
+			children = (
+				F723F9505EDF2CF2A64905ED /* GithubCopilotLearning */,
+				229558CD649BC13BEDA058D0 /* GithubCopilotLearningTests */,
+				4F03DD78CBD1FD2317D1D429 /* GithubCopilotLearningUITests */,
+				7D1B30F709D22432AFF29E91 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4F03DD78CBD1FD2317D1D429 /* GithubCopilotLearningUITests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = GithubCopilotLearningUITests;
+			sourceTree = "<group>";
+		};
+		7D1B30F709D22432AFF29E91 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				28B19781B91089BEB92BAC7F /* GithubCopilotLearning.app */,
+				E0D01F7DF05AD61AB6D15FF0 /* GithubCopilotLearningTests.xctest */,
+				A5D78F63097659BD5C748146 /* GithubCopilotLearningUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F723F9505EDF2CF2A64905ED /* GithubCopilotLearning */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = GithubCopilotLearning;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+/* Begin PBXNativeTarget section */
+		88D2C5D41A0ECC40B6319583 /* GithubCopilotLearningTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 95A86862C84FA2DCCECD3613 /* Build configuration list for PBXNativeTarget "GithubCopilotLearningTests" */;
+			buildPhases = (
+				D86780B8CD82E4972353C874 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E908F3B297857E2D210C8565 /* PBXTargetDependency */,
+			);
+			name = GithubCopilotLearningTests;
+			packageProductDependencies = (
+			);
+			productName = GithubCopilotLearningTests;
+			productReference = E0D01F7DF05AD61AB6D15FF0 /* GithubCopilotLearningTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A73CA16973A946D0F0D3CB71 /* GithubCopilotLearningUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7511AB81AE0E964046606239 /* Build configuration list for PBXNativeTarget "GithubCopilotLearningUITests" */;
+			buildPhases = (
+				B126B7811BAD4F0E06DA982D /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6C0BF18102C713C1AF3E3B20 /* PBXTargetDependency */,
+			);
+			name = GithubCopilotLearningUITests;
+			packageProductDependencies = (
+			);
+			productName = GithubCopilotLearningUITests;
+			productReference = A5D78F63097659BD5C748146 /* GithubCopilotLearningUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		B374EB17A19B70105282141D /* GithubCopilotLearning */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 667FCB6BA057BA66F707870C /* Build configuration list for PBXNativeTarget "GithubCopilotLearning" */;
+			buildPhases = (
+				5D28D2D857B8A9D3BCC1E36E /* R.swift */,
+				28EF312F1AC03129F42881D7 /* Swiftlint */,
+				440F391EE1F6C759015E1C82 /* Sources */,
+				D105284FE48844539F2594A5 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GithubCopilotLearning;
+			packageProductDependencies = (
+				D250974042DF823780244EB0 /* NetworkEngine */,
+				27F4058A94D83CC07B88A82D /* Logging */,
+				2F20B74B7954B054783F2208 /* Alamofire */,
+			);
+			productName = GithubCopilotLearning;
+			productReference = 28B19781B91089BEB92BAC7F /* GithubCopilotLearning.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+/* Begin PBXProject section */
+		69BE95AE86B7402A33987725 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				LastUpgradeVersion = 1500;
+				TargetAttributes = {
+					A73CA16973A946D0F0D3CB71 = {
+						TestTargetID = B374EB17A19B70105282141D;
+					};
+				};
+			};
+			buildConfigurationList = DB604D32683E24D8942D4DF0 /* Build configuration list for PBXProject "GithubCopilotLearning" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 30FA46554F95774BCBC802DC;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				FFF9A084F69417F888FE3FBC /* XCRemoteSwiftPackageReference "Alamofire" */,
+				36367826BAF553B1AF5DA042 /* XCRemoteSwiftPackageReference "swift-log" */,
+				D271365075E06B603B038B5E /* XCRemoteSwiftPackageReference "NetworkEngineXC" */,
+			);
+			preferredProjectObjectVersion = 54;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B374EB17A19B70105282141D /* GithubCopilotLearning */,
+				88D2C5D41A0ECC40B6319583 /* GithubCopilotLearningTests */,
+				A73CA16973A946D0F0D3CB71 /* GithubCopilotLearningUITests */,
+			);
+		};
+/* End PBXProject section */
+/* Begin PBXShellScriptBuildPhase section */
+		28EF312F1AC03129F42881D7 /* Swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Swiftlint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+		};
+		5D28D2D857B8A9D3BCC1E36E /* R.swift */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = R.swift;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/GithubCopilotLearning/Resources/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/GithubCopilotLearning/Resources/R.generated.swift\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+/* Begin PBXSourcesBuildPhase section */
+		440F391EE1F6C759015E1C82 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B126B7811BAD4F0E06DA982D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D86780B8CD82E4972353C874 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+/* Begin PBXTargetDependency section */
+		6C0BF18102C713C1AF3E3B20 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B374EB17A19B70105282141D /* GithubCopilotLearning */;
+			targetProxy = D1770C6C2810F417AA7ABD3E /* PBXContainerItemProxy */;
+		};
+		E908F3B297857E2D210C8565 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B374EB17A19B70105282141D /* GithubCopilotLearning */;
+			targetProxy = C90D8D3E9E104DE4064237A0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+/* Begin XCBuildConfiguration section */
+		0D1354C623704B538F2B4B66 /* Development release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.simform.GithubCopilotLearning;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = "Development release";
+		};
+		164CE3F36E73CFD2F77004B0 /* Staging debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = /Users/rishita/Documents/GithubCopilotLearning/GithubCopilotLearning/Tests.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.simform.GithubCopilotLearning.test;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GithubCopilotLearning.app/GithubCopilotLearning";
+			};
+			name = "Staging debug";
+		};
+		3F034EB8F7885DF2341AB5BA /* Staging release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.simform.GithubCopilotLearning;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = "Staging release";
+		};
+		5BA5B57288DE65DE8C173173 /* Development debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = /Users/rishita/Documents/GithubCopilotLearning/GithubCopilotLearning/UITests.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.simform.GithubCopilotLearning.uitests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GithubCopilotLearning;
+			};
+			name = "Development debug";
+		};
+		8099FC7710395EC8F2844A0F /* Development release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = /Users/rishita/Documents/GithubCopilotLearning/GithubCopilotLearning/UITests.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.simform.GithubCopilotLearning.uitests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GithubCopilotLearning;
+			};
+			name = "Development release";
+		};
+		9DAC4A4F3E84A12BA062354A /* Development debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = GithubCopilotLearning;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_SWIFT_FLAGS = "$(inherited) -D Development -D ACCELERATE_NEW_LAPACK -D ACCELERATE_LAPACK_ILP64";
+				PRODUCT_BUNDLE_IDENTIFIER = com.simform.GithubCopilotLearning;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = "Development debug";
+		};
+		9EE4D27D04C85A126FA0C6BA /* Development release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = GithubCopilotLearning;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				OTHER_SWIFT_FLAGS = "$(inherited) -D Development -D ACCELERATE_NEW_LAPACK -D ACCELERATE_LAPACK_ILP64";
+				PRODUCT_BUNDLE_IDENTIFIER = com.simform.GithubCopilotLearning;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = "Development release";
+		};
+		9EE8D7FA95D849DAD9518328 /* Staging debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = /Users/rishita/Documents/GithubCopilotLearning/GithubCopilotLearning/UITests.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.simform.GithubCopilotLearning.uitests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GithubCopilotLearning;
+			};
+			name = "Staging debug";
+		};
+		9F96B952439A494677F468E8 /* Staging debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.simform.GithubCopilotLearning;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = "Staging debug";
+		};
+		A2D7FA438716A3F001B9CE84 /* Staging release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = /Users/rishita/Documents/GithubCopilotLearning/GithubCopilotLearning/UITests.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.simform.GithubCopilotLearning.uitests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GithubCopilotLearning;
+			};
+			name = "Staging release";
+		};
+		C5E285DF471C9F272624C9FF /* Development release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = /Users/rishita/Documents/GithubCopilotLearning/GithubCopilotLearning/Tests.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.simform.GithubCopilotLearning.test;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GithubCopilotLearning.app/GithubCopilotLearning";
+			};
+			name = "Development release";
+		};
+		C7ACC7E2510E3011E4226141 /* Staging debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = GithubCopilotLearning;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_SWIFT_FLAGS = "$(inherited) -D Staging -D ACCELERATE_NEW_LAPACK -D ACCELERATE_LAPACK_ILP64";
+				PRODUCT_BUNDLE_IDENTIFIER = com.simform.GithubCopilotLearning;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = "Staging debug";
+		};
+		D2C63AC38A7C235185B8A5BC /* Staging release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = GithubCopilotLearning;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				OTHER_SWIFT_FLAGS = "$(inherited) -D Staging -D ACCELERATE_NEW_LAPACK -D ACCELERATE_LAPACK_ILP64";
+				PRODUCT_BUNDLE_IDENTIFIER = com.simform.GithubCopilotLearning;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = "Staging release";
+		};
+		D56F59DB71CE1F4919DFD690 /* Staging release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = /Users/rishita/Documents/GithubCopilotLearning/GithubCopilotLearning/Tests.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.simform.GithubCopilotLearning.test;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GithubCopilotLearning.app/GithubCopilotLearning";
+			};
+			name = "Staging release";
+		};
+		EB45F8447696A95ABA7EC431 /* Development debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = /Users/rishita/Documents/GithubCopilotLearning/GithubCopilotLearning/Tests.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.simform.GithubCopilotLearning.test;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GithubCopilotLearning.app/GithubCopilotLearning";
+			};
+			name = "Development debug";
+		};
+		F2AB21B7A523129CB2692063 /* Development debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.simform.GithubCopilotLearning;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = "Development debug";
+		};
+/* End XCBuildConfiguration section */
+/* Begin XCConfigurationList section */
+		667FCB6BA057BA66F707870C /* Build configuration list for PBXNativeTarget "GithubCopilotLearning" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2AB21B7A523129CB2692063 /* Development debug */,
+				0D1354C623704B538F2B4B66 /* Development release */,
+				9F96B952439A494677F468E8 /* Staging debug */,
+				3F034EB8F7885DF2341AB5BA /* Staging release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Development debug";
+		};
+		7511AB81AE0E964046606239 /* Build configuration list for PBXNativeTarget "GithubCopilotLearningUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5BA5B57288DE65DE8C173173 /* Development debug */,
+				8099FC7710395EC8F2844A0F /* Development release */,
+				9EE8D7FA95D849DAD9518328 /* Staging debug */,
+				A2D7FA438716A3F001B9CE84 /* Staging release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Development debug";
+		};
+		95A86862C84FA2DCCECD3613 /* Build configuration list for PBXNativeTarget "GithubCopilotLearningTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB45F8447696A95ABA7EC431 /* Development debug */,
+				C5E285DF471C9F272624C9FF /* Development release */,
+				164CE3F36E73CFD2F77004B0 /* Staging debug */,
+				D56F59DB71CE1F4919DFD690 /* Staging release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Development debug";
+		};
+		DB604D32683E24D8942D4DF0 /* Build configuration list for PBXProject "GithubCopilotLearning" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9DAC4A4F3E84A12BA062354A /* Development debug */,
+				9EE4D27D04C85A126FA0C6BA /* Development release */,
+				C7ACC7E2510E3011E4226141 /* Staging debug */,
+				D2C63AC38A7C235185B8A5BC /* Staging release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Development debug";
+		};
+/* End XCConfigurationList section */
+/* Begin XCRemoteSwiftPackageReference section */
+		36367826BAF553B1AF5DA042 /* XCRemoteSwiftPackageReference "swift-log" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-log.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		D271365075E06B603B038B5E /* XCRemoteSwiftPackageReference "NetworkEngineXC" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mobile-simformsolutions/NetworkEngineXC.git";
+			requirement = {
+				kind = exactVersion;
+				version = 2.0.1;
+			};
+		};
+		FFF9A084F69417F888FE3FBC /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = exactVersion;
+				version = 5.9.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+/* Begin XCSwiftPackageProductDependency section */
+		27F4058A94D83CC07B88A82D /* Logging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 36367826BAF553B1AF5DA042 /* XCRemoteSwiftPackageReference "swift-log" */;
+			productName = Logging;
+		};
+		2F20B74B7954B054783F2208 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FFF9A084F69417F888FE3FBC /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		D250974042DF823780244EB0 /* NetworkEngine */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D271365075E06B603B038B5E /* XCRemoteSwiftPackageReference "NetworkEngineXC" */;
+			productName = NetworkEngine;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 69BE95AE86B7402A33987725 /* Project object */;
+}

@@ -1,0 +1,16 @@
+import_name: 'GithubCopilotLearningSecrets' # Optional. Name of the framework to be imported. Defaults to ArkanaKeys.
+namespace: 'Secrets' # Optional. Namespace used to access the secrets in the codebase. Defaults to ArkanaKeys.
+pod_name: 'GithubCopilotLearningSecrets' # Optional. Name of the pod to be declared in your Podfile. Defaults to ArkanaKeys.
+swift_declaration_strategy: let # Optional. One of: lazy var, var, let. Defaults to let.
+should_generate_unit_tests: false # Optional. One of: true, false. Defaults to true.
+package_manager: cocoapods # Optional. This setting defines which type of dependency management you're going ot use to integrate Arkana into your project. One of: spm, cocoapods. If you use both in your project, use cocoapods here. Defaults to spm.
+environments:
+  - UAT
+  - Staging
+global_secrets:
+  - GlobalKey
+environment_secrets:
+  - SentryDNSKey
+  - BaseURL
+  - refreshToken
+  - awsS3URL
