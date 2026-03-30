@@ -1,6 +1,6 @@
 ---
 name: app-store-submission-skill
-description: Guide iOS developers through the full Apple App Store submission process from project readiness through build validation, screenshots, metadata, and final submission. Use this skill whenever an iOS developer mentions - submitting to the App Store, App Store Connect, TestFlight upload, build validation, app screenshots, app metadata, release checklist, preparing a release, app review, or archiving a build. Also trigger when the user says things like "I'm getting ready to ship", "prepping my app for release", or "what do I need before submitting". This skill applies even if the user only asks about one phase (e.g., just screenshots) — offer the full checklist so they don't miss anything.
+description: Guide iOS developers through the full Apple App Store submission process from project readiness through build validation, screenshots, metadata, and final submission. Use this skill whenever an iOS developer mentions: submitting to the App Store, App Store Connect, TestFlight upload, build validation, app screenshots, app metadata, release checklist, preparing a release, app review, or archiving a build. Also trigger when the user says things like "I'm getting ready to ship", "prepping my app for release", or "what do I need before submitting". This skill applies even if the user only asks about one phase (e.g., just screenshots) — offer the full checklist so they don't miss anything.
 ---
 
 # App Store Submission Skill
@@ -11,37 +11,17 @@ to what the user already has done. Don't repeat steps they've confirmed.
 
 ---
 
-## Agentic Mode
+## How to Start
 
-When running inside Claude Code, operate autonomously — do not ask the user
-what to check or wait for permission between steps. Run the full pipeline
-automatically and only pause at the two human gates below.
+Ask which phase they're in (or start from the top if they say "beginning"):
+1. Project Readiness
+2. Build Validation
+3. Screenshots
+4. Metadata
+5. Submission Flow
 
-### Agentic Pipeline
-
-```
-1. Run validate_project.sh        → auto, interpret results
-2. Report findings, fix if able   → auto
-3. Prompt user: ready to archive? → HUMAN GATE 1
-4. Walk archive + upload steps    → guided (CLI commands)
-5. Screenshot review              → wait for user to drop images
-6. Metadata generation            → auto if user provides app info
-7. Final checklist                → auto
-8. Prompt user: ready to submit?  → HUMAN GATE 2 (required, cannot skip)
-```
-
-### Step 1 — Run the Validator (always do this first)
-
-When the user says anything like "validate my project", "check my Xcode
-settings", "run the agent", or "start the submission process" — immediately
-run the validation script without asking:
-
-```bash
-# From the user's project root
-bash .skill/app-store-submission/scripts/validate_project.sh
-```
-
-Or if the
+If they describe a specific blocker (e.g., "my build is rejecting"), jump
+straight to the relevant phase and diagnose before resuming the checklist.
 
 ---
 
@@ -154,34 +134,6 @@ clear_previous_screenshots(true)
 bundle exec fastlane snapshot
 ```
 
-### ⚠️ NOTE — Always Show This Message First
-
-As soon as the user enters Phase 3 or mentions screenshots for ANY reason,
-immediately show this note before anything else — before checklists, before
-rules, before size tables:
-
----
-
-> 📎 **Before you upload anything to App Store Connect — attach your
-> screenshots here first.**
->
-> I'll check each one and tell you if it will be approved or rejected by
-> Apple before you waste time uploading. Just drag and drop your screenshot
-> images into this chat.
->
-> I'll check: status bar, placeholder content, layout issues, text
-> legibility, branding, and device frame — and give you a clear
-> ✅ Approved / ❌ Reject verdict for each one.
-
----
-
-Do not proceed to the checklist or size guidance until the user either:
-- Attaches screenshots for review, OR
-- Explicitly says "I'll skip the review" or "I already checked them"
-
-If the user says they don't have screenshots yet, help them take them first
-(Simulator steps below), then repeat this note when they're ready.
-
 ### Manual Screenshot Checklist
 - [ ] Correct dimensions for each required device (see `references/screenshot-sizes.md`)
 - [ ] No status bar showing real time, carrier, or low battery
@@ -252,135 +204,43 @@ After reviewing all screenshots, give a summary:
 
 ## Phase 4 — Metadata
 
-When the user reaches this phase, always display the full metadata template
-inline in your response — do not just point to the reference file. Show it
-so the user can fill it in directly in chat without opening any other file.
+Read `references/metadata-template.md` for a fill-in-the-blank template.
 
-Say: "Here's your metadata template — fill in each field and share it back,
-I'll review it before you enter it into App Store Connect."
+### App Information (set once, version-independent)
+| Field | Limit | Notes |
+|---|---|---|
+| App Name | 30 chars | Appears under icon; include primary keyword |
+| Subtitle | 30 chars | Secondary keyword opportunity |
+| Bundle ID | — | Cannot change after first submission |
+| SKU | — | Internal identifier; your choice, immutable |
+| Primary Category | — | Pick the most accurate one |
+| Secondary Category | optional | |
+| Content Rights | — | Confirm you own or have licensed all content |
 
-Then display this exact template:
-
----
-
-### 📋 App Store Metadata Template
-
-**APP INFORMATION** *(one-time, does not change per release)*
-```
-App Name:         [30 chars max — include primary keyword]
-Subtitle:         [30 chars max — secondary keyword, unique value prop]
-Bundle ID:        com.yourcompany.yourapp  ← cannot change after first submit
-SKU:              [your internal identifier — alphanumeric, your choice]
-Primary Category: [e.g., Productivity / Health & Fitness / Finance]
-Secondary Cat.:   [optional]
-Content Rights:   ☐ I own or have rights to all content in this app
-```
-
-**VERSION INFORMATION** *(fill for every release)*
-```
-Version:          [e.g., 2.1.0]
-Build:            [must be higher than last uploaded build]
-```
-
-**Description** *(4000 chars max — first 3 lines show before "More" tap)*
-```
-[Lead with the core user benefit — what problem does this solve?]
-[First 3 lines appear before "More" tap — make them count]
-
-[Feature 1 headline]
-[1–2 sentence description of feature 1]
-
-[Feature 2 headline]
-[1–2 sentence description of feature 2]
-
-[Feature 3 headline]
-[1–2 sentence description of feature 3]
-
-[Optional: social proof, awards, press mentions]
-
-[Support: support@yourcompany.com | yourapp.com/support]
-```
-
-**Keywords** *(100 chars total, comma-separated, no spaces after commas)*
-```
-[keyword1,keyword2,keyword3,keyword4,keyword5,keyword6,keyword7]
-```
-Rules: no repeating app name, no competitor names, think synonyms + use-cases.
-
-**What's New** *(4000 chars max — be specific, users read this)*
-```
-• [Specific fix or feature]
-• [Another notable change]
-• [Bug fixes and performance improvements]  ← use only if nothing specific
-```
-
-**URLs**
-```
-Support URL:    https://yourapp.com/support   ← required, must be live
-Marketing URL:  https://yourapp.com           ← optional
-Privacy Policy: https://yourapp.com/privacy   ← required
-```
-
-**Age Rating Questionnaire**
-```
-Cartoon or fantasy violence:        ☐ None  ☐ Infrequent  ☐ Frequent
-Realistic violence:                 ☐ None  ☐ Infrequent  ☐ Frequent
-Prolonged graphic violence:         ☐ No    ☐ Yes
-Sexual content / nudity:            ☐ None  ☐ Mild        ☐ Frequent
-Profanity / crude humor:            ☐ None  ☐ Infrequent  ☐ Frequent
-Alcohol, tobacco, drugs:            ☐ None  ☐ Infrequent  ☐ Frequent
-Simulated gambling:                 ☐ No    ☐ Yes
-User-generated content / sharing:   ☐ No    ☐ Yes
-Unrestricted web access:            ☐ No    ☐ Yes
-Gambling with real money:           ☐ No    ☐ Yes
-```
-
-**App Review Notes**
-```
-Test Account (if login required):
-  Username:
-  Password:
-  [Steps to reach testable state]
-
-Notes to Reviewer:
-  [Explain non-obvious features]
-  [Explain sensitive permissions — e.g. "Location shows nearby stores on map tab"]
-  [Any external hardware or service dependency]
-```
-
-**Pricing & Availability**
-```
-Price:        ☐ Free  ☐ Paid — $[amount]
-Release:      ☐ Auto after approval  ☐ Manual  ☐ Phased rollout
-Territories:  ☐ All  ☐ Specific: [list]
-```
-
-**Encryption**
-```
-Uses encryption beyond Apple HTTPS/TLS?
-  ☐ No  → select "No" in App Store Connect
-  ☐ Yes → may need ERN — check Apple's export compliance docs
-```
-
----
-
-After the user shares their filled template, review every field:
-- Flag anything over the character limit
-- Flag empty required fields (Support URL, Privacy Policy URL)
-- Flag keyword mistakes (repeated app name, spaces after commas, over 100 chars)
-- Flag vague What's New text — push them to be specific
-- Suggest improvements to description if the first 3 lines don't lead with user benefit
-- Only mark metadata as ✅ ready after all required fields are filled and valid
+### Version Information (per release)
+| Field | Limit | Notes |
+|---|---|---|
+| Description | 4000 chars | First 3 lines show without "More"; lead with value |
+| Keywords | 100 chars total | Comma-separated; no spaces after commas; no repeating app name |
+| What's New | 4000 chars | Be specific; users read this for bug fixes |
+| Support URL | required | Must be live and reachable |
+| Marketing URL | optional | |
+| Privacy Policy URL | required | Must describe actual data practices |
 
 ### Age Rating
-Key flags to mention to the user:
+Complete the questionnaire honestly. Key flags:
 - Any user-generated content → 17+ unless you have moderation
 - Mature/suggestive content → follow Apple's thresholds exactly
-- Gambling mechanics → always disclose
+- Gambling mechanics → disclose
+
+### Review Notes (often overlooked — don't skip)
+- Demo account credentials if login is required
+- Instructions for any feature that isn't obvious to a reviewer
+- Explanation for any sensitive permissions (e.g., "Location is used to show nearby stores")
 
 ### App Encryption
-- If they use **only Apple's standard encryption** (HTTPS/TLS): answer "No" — no ERN needed
-- If they use custom cryptography: they may need an ERN (Encryption Registration Number)
+- If you use **only Apple's standard encryption** (HTTPS/TLS): answer "No" to encryption
+- If you use custom cryptography: you may need an ERN (Encryption Registration Number)
 
 ---
 
