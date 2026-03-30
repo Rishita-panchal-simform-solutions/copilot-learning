@@ -1,5 +1,5 @@
 ---
-name: skills
+name: app-store-submission-skill
 description: Guide iOS developers through the full Apple App Store submission process from project readiness through build validation, screenshots, metadata, and final submission. Use this skill whenever an iOS developer mentions: submitting to the App Store, App Store Connect, TestFlight upload, build validation, app screenshots, app metadata, release checklist, preparing a release, app review, or archiving a build. Also trigger when the user says things like "I'm getting ready to ship", "prepping my app for release", or "what do I need before submitting". This skill applies even if the user only asks about one phase (e.g., just screenshots) — offer the full checklist so they don't miss anything.
 ---
 
