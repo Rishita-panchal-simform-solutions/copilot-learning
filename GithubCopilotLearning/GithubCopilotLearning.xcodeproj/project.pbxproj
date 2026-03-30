@@ -5,11 +5,13 @@
 	};
 	objectVersion = 54;
 	objects = {
+
 /* Begin PBXBuildFile section */
 		44AF2280FFC3FB3C9A753B57 /* Logging in Frameworks */ = {isa = PBXBuildFile; productRef = 27F4058A94D83CC07B88A82D /* Logging */; };
 		D0588D60432195EFB8DCC052 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 2F20B74B7954B054783F2208 /* Alamofire */; };
 		DF99A5C92E48A5DF2D99AEAF /* NetworkEngine in Frameworks */ = {isa = PBXBuildFile; productRef = D250974042DF823780244EB0 /* NetworkEngine */; };
 /* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		C90D8D3E9E104DE4064237A0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -26,11 +28,13 @@
 			remoteInfo = GithubCopilotLearning;
 		};
 /* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		28B19781B91089BEB92BAC7F /* GithubCopilotLearning.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = GithubCopilotLearning.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5D78F63097659BD5C748146 /* GithubCopilotLearningUITests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = GithubCopilotLearningUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0D01F7DF05AD61AB6D15FF0 /* GithubCopilotLearningTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = GithubCopilotLearningTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
+
 /* Begin PBXFrameworksBuildPhase section */
 		D105284FE48844539F2594A5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
@@ -43,12 +47,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
+
 /* Begin PBXGroup section */
 		229558CD649BC13BEDA058D0 /* GithubCopilotLearningTests */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = GithubCopilotLearningTests;
+			name = GithubCopilotLearningTests;
+			path = ../../GithubCopilotLearning/GithubCopilotLearning/GithubCopilotLearningTests;
 			sourceTree = "<group>";
 		};
 		30FA46554F95774BCBC802DC = {
@@ -65,7 +71,8 @@
 			isa = PBXGroup;
 			children = (
 			);
-			path = GithubCopilotLearningUITests;
+			name = GithubCopilotLearningUITests;
+			path = ../../GithubCopilotLearning/GithubCopilotLearning/GithubCopilotLearningUITests;
 			sourceTree = "<group>";
 		};
 		7D1B30F709D22432AFF29E91 /* Products */ = {
@@ -82,10 +89,12 @@
 			isa = PBXGroup;
 			children = (
 			);
-			path = GithubCopilotLearning;
+			name = GithubCopilotLearning;
+			path = ../../GithubCopilotLearning/GithubCopilotLearning/GithubCopilotLearning;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
+
 /* Begin PBXNativeTarget section */
 		88D2C5D41A0ECC40B6319583 /* GithubCopilotLearningTests */ = {
 			isa = PBXNativeTarget;
@@ -147,6 +156,7 @@
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
+
 /* Begin PBXProject section */
 		69BE95AE86B7402A33987725 /* Project object */ = {
 			isa = PBXProject;
@@ -185,6 +195,7 @@
 			);
 		};
 /* End PBXProject section */
+
 /* Begin PBXShellScriptBuildPhase section */
 		28EF312F1AC03129F42881D7 /* Swiftlint */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -226,6 +237,7 @@
 			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/GithubCopilotLearning/Resources/R.generated.swift\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		440F391EE1F6C759015E1C82 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -249,6 +261,7 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
 /* Begin PBXTargetDependency section */
 		6C0BF18102C713C1AF3E3B20 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -261,18 +274,18 @@
 			targetProxy = C90D8D3E9E104DE4064237A0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
 		0D1354C623704B538F2B4B66 /* Development release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "Apple Distribution";
 				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.simform.GithubCopilotLearning;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -300,13 +313,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "Apple Distribution";
 				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.simform.GithubCopilotLearning;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -505,7 +517,6 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.simform.GithubCopilotLearning;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -722,13 +733,13 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.simform.GithubCopilotLearning;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = "Development debug";
 		};
 /* End XCBuildConfiguration section */
+
 /* Begin XCConfigurationList section */
 		667FCB6BA057BA66F707870C /* Build configuration list for PBXNativeTarget "GithubCopilotLearning" */ = {
 			isa = XCConfigurationList;
@@ -775,6 +786,7 @@
 			defaultConfigurationName = "Development debug";
 		};
 /* End XCConfigurationList section */
+
 /* Begin XCRemoteSwiftPackageReference section */
 		36367826BAF553B1AF5DA042 /* XCRemoteSwiftPackageReference "swift-log" */ = {
 			isa = XCRemoteSwiftPackageReference;
@@ -801,6 +813,7 @@
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
 		27F4058A94D83CC07B88A82D /* Logging */ = {
 			isa = XCSwiftPackageProductDependency;

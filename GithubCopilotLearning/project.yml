@@ -64,6 +64,14 @@ targets:
         basedOnDependencyAnalysis: false
     settings:
       PRODUCT_BUNDLE_IDENTIFIER: com.simform.GithubCopilotLearning
+      CODE_SIGN_ENTITLEMENTS: GithubCopilotLearning.entitlements
+      configs:
+        Staging release:
+          CODE_SIGN_IDENTITY: "Apple Distribution"
+        Development release:
+          CODE_SIGN_IDENTITY: "Apple Distribution"
+    resources:
+      - path: PrivacyInfo.xcprivacy
   GithubCopilotLearningTests:
     deploymentTarget: 18.0
     platform: iOS
