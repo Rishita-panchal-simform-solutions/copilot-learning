@@ -577,3 +577,10 @@ The BoomerangFX project follows a modular MVVM architecture with clear separatio
        }
    }
    ```
+
+## Active Technologies
+- Swift 5.9+ / iOS 18.0+ + SwiftUI (UI layer), NetworkEngine 2.0.1 (Alamofire-based, via `APITarget`), Connectivity (offline detection via `ReachabilityManager`), LocalAuthentication (Face ID / Touch ID), UserNotifications (push permission request) (003-incomm-signup-flow)
+- None — signup session state is in-memory only; no CoreData, Keychain, or UserDefaults writes during the flow (003-incomm-signup-flow)
+
+## Recent Changes
+- 003-incomm-signup-flow: Added Swift 5.9+ / iOS 18.0+ + SwiftUI (UI layer), NetworkEngine 2.0.1 (Alamofire-based, via `APITarget`), Connectivity (offline detection via `ReachabilityManager`), LocalAuthentication (Face ID / Touch ID), UserNotifications (push permission request)

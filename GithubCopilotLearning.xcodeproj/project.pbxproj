@@ -47,6 +47,16 @@
 		FEF5518AEAE3EA8F3A8E3065 /* Pods_GithubCopilotLearning.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GithubCopilotLearning.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		7DF249EC2F863E5700A5D0B5 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = B374EB17A19B70105282141D /* GithubCopilotLearning */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		7D9D0AE12F755499000CD7B8 /* Constants */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Constants; sourceTree = "<group>"; };
 		7D9D0AF42F7554A1000CD7B8 /* Extensions */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Extensions; sourceTree = "<group>"; };
@@ -54,7 +64,7 @@
 		7DF245422F83BB9400A5D0B5 /* Logger */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Logger; sourceTree = "<group>"; };
 		7DF2454E2F83BB9700A5D0B5 /* Models */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Models; sourceTree = "<group>"; };
 		7DF245592F83BB9B00A5D0B5 /* Modifier */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Modifier; sourceTree = "<group>"; };
-		7DF245602F83BB9E00A5D0B5 /* Plist */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Plist; sourceTree = "<group>"; };
+		7DF245602F83BB9E00A5D0B5 /* Plist */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (7DF249EC2F863E5700A5D0B5 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = Plist; sourceTree = "<group>"; };
 		7DF2456B2F83BBA200A5D0B5 /* NetworkLayer */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = NetworkLayer; sourceTree = "<group>"; };
 		7DF245732F83BBA400A5D0B5 /* Preview Content */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = "Preview Content"; sourceTree = "<group>"; };
 		7DF2457F2F83BBA800A5D0B5 /* Reusables */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Reusables; sourceTree = "<group>"; };

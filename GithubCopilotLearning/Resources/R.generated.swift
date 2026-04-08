@@ -185,7 +185,7 @@ struct _R {
     }
   }
 
-  /// This `_R.color` struct is generated, and contains static references to 5 colors.
+  /// This `_R.color` struct is generated, and contains static references to 9 colors.
   struct color {
     let bundle: Foundation.Bundle
 
@@ -197,6 +197,18 @@ struct _R {
 
     /// Color `ShimmerWave`.
     var shimmerWave: RswiftResources.ColorResource { .init(name: "ShimmerWave", path: [], bundle: bundle) }
+
+    /// Color `SignupAccent`.
+    var signupAccent: RswiftResources.ColorResource { .init(name: "SignupAccent", path: [], bundle: bundle) }
+
+    /// Color `SignupBackground`.
+    var signupBackground: RswiftResources.ColorResource { .init(name: "SignupBackground", path: [], bundle: bundle) }
+
+    /// Color `SignupError`.
+    var signupError: RswiftResources.ColorResource { .init(name: "SignupError", path: [], bundle: bundle) }
+
+    /// Color `SignupPrimaryText`.
+    var signupPrimaryText: RswiftResources.ColorResource { .init(name: "SignupPrimaryText", path: [], bundle: bundle) }
 
     /// Color `ThemeColor`.
     var themeColor: RswiftResources.ColorResource { .init(name: "ThemeColor", path: [], bundle: bundle) }

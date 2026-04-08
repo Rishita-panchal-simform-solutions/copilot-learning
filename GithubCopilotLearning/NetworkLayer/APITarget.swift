@@ -10,6 +10,12 @@ import NetworkEngine
 public enum APITarget: NetworkRepo {
     case refreshToken(request: RefreshTokenRequest)
     case randomUser(request: UserListRequest)
+    // MARK: - Signup
+    case signupLookup(request: SignupLookupRequest)
+    case signupResendOTP(request: ResendOTPRequest)
+    case signupVerifyOTP(request: OTPVerificationRequest)
+    case signupCreatePassword(request: CreatePasswordRequest)
+    case signupAcceptTerms(request: TermsAcceptanceRequest)
 }
 extension APITarget {
     
@@ -28,6 +34,16 @@ extension APITarget {
             return "refreshtoken/"
         case .randomUser:
             return "/api/users/random_user"
+        case .signupLookup:
+            return "/signup/lookup"
+        case .signupResendOTP:
+            return "/signup/resend-otp"
+        case .signupVerifyOTP:
+            return "/signup/verify-otp"
+        case .signupCreatePassword:
+            return "/signup/create-password"
+        case .signupAcceptTerms:
+            return "/signup/accept-terms"
         }
     }
     public var method: NetworkEngine.Method {
@@ -36,6 +52,9 @@ extension APITarget {
             return .post
         case .randomUser:
             return .get
+        case .signupLookup, .signupResendOTP, .signupVerifyOTP,
+             .signupCreatePassword, .signupAcceptTerms:
+            return .post
         }
     }
     public var task: NetworkTask {
@@ -44,11 +63,23 @@ extension APITarget {
             return .requestJSONEncodable(request)
         case .randomUser(let request):
             return .requestParameterEncodable(request)
+        case .signupLookup(let request):
+            return .requestJSONEncodable(request)
+        case .signupResendOTP(let request):
+            return .requestJSONEncodable(request)
+        case .signupVerifyOTP(let request):
+            return .requestJSONEncodable(request)
+        case .signupCreatePassword(let request):
+            return .requestJSONEncodable(request)
+        case .signupAcceptTerms(let request):
+            return .requestJSONEncodable(request)
         }
     }
     public var keyDecodingStrategy: NetworkEngine.KeyDecodingStrategy {
         switch self {
-        case .refreshToken, .randomUser:
+        case .refreshToken, .randomUser,
+             .signupLookup, .signupResendOTP, .signupVerifyOTP,
+             .signupCreatePassword, .signupAcceptTerms:
             return .convertFromSnakeCase
         }
     }
@@ -57,6 +88,9 @@ extension APITarget {
         case .refreshToken:
             return NetworkHelper.httpPreTokenHeader
         case .randomUser:
+            return NetworkHelper.httpPreTokenHeader
+        case .signupLookup, .signupResendOTP, .signupVerifyOTP,
+             .signupCreatePassword, .signupAcceptTerms:
             return NetworkHelper.httpPreTokenHeader
         }
     }

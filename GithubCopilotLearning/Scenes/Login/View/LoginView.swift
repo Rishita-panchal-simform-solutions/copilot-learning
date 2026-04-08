@@ -10,6 +10,7 @@ import SFSafeSymbols
 // MARK: - variables
 struct LoginView {
     @StateObject private var routerPath = OnboardingRouterPath()
+    @State private var isSignupPresented = false
 }
 // MARK: - view
 extension LoginView: View {
@@ -35,8 +36,12 @@ extension LoginView: View {
             .onboardingWithAppRouter(routerPath)
         }
         .onboardingWithSheetDestinations($routerPath.presentedSheet)
+        .fullScreenCover(isPresented: $isSignupPresented) {
+            SignupFlowView()
+        }
     }
 }
+
 // MARK: - Subviews
 extension LoginView {
     private var thumbView: some View {
@@ -73,14 +78,19 @@ extension LoginView {
         .cornerRadius(12, corners: .allCorners)
     }
     private var registerNow: some View {
-        HStack {
-            Text(AppStrings.dontHaveAccount())
-                .font(.systemRegular(size: 15, adaptive: true))
-                .foregroundStyle(.white)
-            Text(AppStrings.signup())
-                .font(.systemBold(size: 18, adaptive: true))
-                .foregroundStyle(.white)
+        Button {
+            isSignupPresented = true
+        } label: {
+            HStack {
+                Text(AppStrings.dontHaveAccount())
+                    .font(.systemRegular(size: 15, adaptive: true))
+                    .foregroundStyle(.white)
+                Text(AppStrings.signup())
+                    .font(.systemBold(size: 18, adaptive: true))
+                    .foregroundStyle(.white)
+            }
         }
+        .accessibilityIdentifier("login_registerNow_button")
     }
 }
 #Preview {
