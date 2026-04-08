@@ -155,10 +155,11 @@ extension CreatePasswordView {
 
     private var nextButton: some View {
         Button {
-            viewModel.createPassword { session in
-                routerPath.session = session
-                routerPath.navigate(to: .termsAgreement)
-            }
+//            viewModel.createPassword { session in
+//                routerPath.session = session
+//                routerPath.navigate(to: .termsAgreement)
+//            }
+            routerPath.navigate(to: .termsAgreement)
         } label: {
             Text(SignupStrings.createPasswordNextButton)
                 .font(.systemBold(size: 18, adaptive: true))

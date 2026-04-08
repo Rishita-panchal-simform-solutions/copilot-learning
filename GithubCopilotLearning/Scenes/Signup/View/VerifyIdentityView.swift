@@ -121,10 +121,11 @@ extension VerifyIdentityView {
 
     private var verifyButton: some View {
         Button {
-            viewModel.verify { session in
-                routerPath.session = session
-                routerPath.navigate(to: .createPassword)
-            }
+//            viewModel.verify { session in
+//                routerPath.session = session
+//                routerPath.navigate(to: .createPassword)
+//            }
+            routerPath.navigate(to: .createPassword)
         } label: {
             Text(SignupStrings.verifyIdentityVerifyButton)
                 .font(.systemBold(size: 18, adaptive: true))

@@ -141,12 +141,13 @@ extension PersonalInfoView {
 
     private var submitButton: some View {
         Button {
-            viewModel.submitPersonalInfo { [self] session in
-                routerPath.session = session
-                routerPath.navigate(to: .verifyIdentity)
-            } onDuplicate: {
-                routerPath.popToRoot()
-            }
+//            viewModel.submitPersonalInfo { [self] session in
+//                routerPath.session = session
+//                routerPath.navigate(to: .verifyIdentity)
+//            } onDuplicate: {
+//                routerPath.popToRoot()
+//            }
+            routerPath.navigate(to: .verifyIdentity)
         } label: {
             Text(SignupStrings.personalInfoSubmitButton)
                 .font(.systemBold(size: 18, adaptive: true))
